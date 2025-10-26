@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caipyra 2026 — 04 a 07 de junho — ICMC/USP, São Carlos</title>
+  <meta name="description" content="Caipyra 2026 — encontro Python no interior! 04 a 07 de junho de 2026 no ICMC/USP em São Carlos, SP." />
+  <meta property="og:title" content="Caipyra 2026 — São Carlos, SP" />
+  <meta property="og:description" content="04–07 de junho de 2026 no ICMC/USP. Participe!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="theme-color" content="#963435" />
+  
+  <style>
+    :root{
+      --bg:#963435;     /* vinho */
+      --fg:#ffffff;     /* branco base para texto */
+      --accent:#feca59; /* amarelo destaque */
+      --ring: rgba(254,202,89,0.35);
+      --radius: 16px;
+      --maxw: 1100px;
+    }
+    html,body{height:100%}
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.45; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    a{color:var(--fg); text-decoration:underline; text-underline-offset: 3px}
+    .hl{ color: var(--accent); }
+    header{
+      position:sticky; top:0; backdrop-filter:saturate(1.1) blur(6px);
+      background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0));
+      border-bottom:1px solid var(--ring); z-index:50;
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; max-width:var(--maxw); margin:0 auto; padding:14px 20px}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.3px}
+    .brand .mark{width:36px; height:36px; border:2px solid var(--fg); border-radius:50%; display:grid; place-items:center; font-weight:900}
+    .nav a{ text-decoration:none }
+    .nav .links{display:flex; gap:14px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:10px; border:2px solid var(--fg); padding:10px 16px; border-radius: 999px; text-decoration:none; font-weight:700; letter-spacing:.2px; transition: transform .15s ease, box-shadow .15s ease}
+    .btn:hover{ transform: translateY(-1px); box-shadow:0 6px 22px var(--ring)}
+    .btn:active{ transform: translateY(0) scale(.98)}
+    .hero{max-width:var(--maxw); margin:0 auto; padding:64px 20px 28px}
+    .hero h1{font-size: clamp(32px, 5vw, 56px); line-height:1.05; margin: 10px 0 8px}
+    .meta{font-size: clamp(16px, 2.2vw, 20px); opacity:.95}
+    .lede{margin:22px 0 28px; font-size: clamp(18px, 2.4vw, 22px)}
+    .actions{display:flex; gap:14px; flex-wrap:wrap}
+    .badge{display:inline-block; border:1px dashed var(--fg); padding:6px 10px; border-radius: 999px; font-weight:700; letter-spacing:.3px}
+
+    main{max-width:var(--maxw); margin:0 auto; padding: 0 20px 64px}
+    section{margin: 36px 0}
+    h2{font-size: clamp(22px, 3.6vw, 34px); margin: 0 0 12px}
+    p{margin:10px 0}
+
+    .card{border:1px solid var(--ring); border-radius: var(--radius); padding:18px 18px; backdrop-filter: saturate(1.05);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));}
+
+    .grid{display:grid; gap:16px}
+    @media (min-width: 720px){ .grid.cols-3{ grid-template-columns: repeat(3,1fr)} }
+    @media (min-width: 720px){ .grid.cols-2{ grid-template-columns: repeat(2,1fr)} }
+
+    .day{border:1px solid rgba(255,255,255,.85); border-radius: var(--radius); padding:14px 16px}
+    .day h3{margin:4px 0 10px; font-size: 18px}
+    .day ul{list-style:none; padding:0; margin:0; display:grid; gap:8px}
+    .day li{padding:10px 12px; border:1px dashed var(--ring); border-radius:12px}
+
+    .kicker{font-size:12px; letter-spacing: .25em; text-transform:uppercase; opacity:.9}
+    .faq details{ border:1px solid var(--ring); border-radius:12px; padding: 12px 14px}
+    .faq summary{cursor:pointer; font-weight:700}
+    .faq details + details{margin-top:10px}
+
+    .footer{border-top:1px solid var(--ring); padding:22px 20px 64px; text-align:center; opacity:.9}
+    .tiny{font-size:12px; opacity:.85}
+
+    .countdown{display:flex; gap:10px; margin:14px 0 0}
+    .pill{border:1px solid var(--fg); border-radius:12px; padding:8px 10px; min-width:72px; text-align:center}
+    .pill b{display:block; font-size:22px}
+
+    /* Skip link */
+    .skip{ position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip:focus{ left:8px; top:8px; width:auto; height:auto; background:transparent; border:2px dashed var(--fg); border-radius:8px; padding:6px 10px }
+
+    /* Anchors spacing for sticky header */
+    .anchor{ position: relative; scroll-margin-top: 72px }
+
+    /* ----- Mobile navigation ----- */
+    .menu-toggle{ display:none; align-items:center; justify-content:center; gap:8px; border:2px solid var(--fg); background:transparent; color:var(--fg); padding:8px 12px; border-radius:12px; font-weight:800 }
+    @media (max-width: 840px){
+      .menu-toggle{ display:inline-flex }
+      .nav{ position:relative }
+      .nav .links{ position:absolute; right:12px; top:56px; background:rgba(0,0,0,.18); border:1px solid var(--ring); border-radius:14px; padding:10px; display:none; flex-direction:column; min-width: 220px; box-shadow:0 10px 30px var(--ring) }
+      .nav[data-open="true"] .links{ display:flex }
+      .nav .links .btn{ width:100%; justify-content:space-between; padding:12px 14px }
+      .btn{ padding:12px 16px }
+      .hero{ padding-top:48px }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <nav class="nav" aria-label="Principal">
+      <a class="brand" href="#topo" aria-label="Caipyra 2026, início">
+        <span class="mark" aria-hidden="true">🐍</span>
+        <span><span class="hl">Caipyra</span> 2026</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-links" aria-label="Abrir menu">☰</button>
+      <div class="links" id="menu-links">
+        <a href="#sobre" class="btn">Sobre</a>
+        <a href="#programacao" class="btn">Programação</a>
+        <a href="#local" class="btn">Local</a>
+        <a href="#faq" class="btn">FAQ</a>
+        <a href="#patrocinio" class="btn">Patrocínio</a>
+        <a id="cta-tickets" href="#ingressos" class="btn" aria-label="Comprar ingressos">Ingressos</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero" id="topo">
+    <p class="kicker">Encontro Python no interior</p>
+    <h1><span class="hl">Caipyra</span> 2026</h1>
+    <div class="meta">04 a 07 de junho de 2026 · ICMC/USP · São Carlos, SP</div>
+    <p class="lede">Quatro dias de palestras, tutoriais, sprints e muito café coado. Junte-se à comunidade Python em São Carlos!</p>
+    <div class="actions">
+      <!-- Atualize a URL abaixo quando a bilheteria for publicada -->
+      <a class="btn" href="https://tickets.example.com/caipyra-2026" id="link-ingressos" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden>↗</span></a>
+      <span class="badge" id="ingressos">Link temporário</span>
+    </div>
+    <div class="countdown" aria-live="polite" aria-label="Contagem regressiva para o evento">
+      <div class="pill"><b id="d">–</b><span>dias</span></div>
+      <div class="pill"><b id="h">–</b><span>horas</span></div>
+      <div class="pill"><b id="m">–</b><span>min</span></div>
+      <div class="pill"><b id="s">–</b><span>s</span></div>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <section id="sobre" class="anchor">
+      <h2>Sobre o <span class="hl">Caipyra</span></h2>
+      <div class="card">
+        <p>O Caipyra é um evento comunitário, independente e acessível, que celebra o ecossistema Python com foco em integração entre pessoas, diversidade e troca prática de conhecimento.</p>
+        <p>Nesta edição de 2026, nos reunimos no <strong>ICMC/USP</strong> em São Carlos para <strong>quinta</strong> de sprints (projetos open source), <strong>sexta</strong> de tutoriais e <strong>sábado &amp; domingo</strong> de palestras e lightning talks.</p>
+      </div>
+    </section>
+
+    <section id="programacao" class="anchor">
+      <h2><span class="hl">Programação</span> (preliminar)</h2>
+      <div class="grid cols-2">
+        <div class="day">
+          <h3>Quinta · 04/06</h3>
+          <ul>
+            <li>Sprints de projetos opensource</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h3>Sexta · 05/06</h3>
+          <ul>
+            <li>Tutoriais</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h3>Sábado · 06/06</h3>
+          <ul>
+            <li>Palestras &amp; lightning talks</li>
+          </ul>
+        </div>
+        <div class="day">
+          <h3>Domingo · 07/06</h3>
+          <ul>
+            <li>Palestras &amp; lightning talks</li>
+          </ul>
+        </div>
+      </div>
+      <p class="tiny">* A programação detalhada será divulgada mais perto do evento.</p>
+    </section>
+
+    <section id="local" class="anchor">
+      <h2><span class="hl">Local</span></h2>
+      <div class="card">
+        <p><strong>ICMC/USP — São Carlos, SP</strong><br />
+        Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo.</p>
+        <p>Dicas de hospedagem e deslocamento serão publicadas aqui.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="anchor faq">
+      <h2><span class="hl">FAQ</span></h2>
+      <details>
+        <summary>Haverá emissão de certificados?</summary>
+        <p>Sim, certificados digitais serão disponibilizados aos participantes após o evento.</p>
+      </details>
+      <details>
+        <summary>O evento é para iniciantes?</summary>
+        <p>Totalmente! Teremos trilhas e atividades para vários níveis, incluindo iniciantes.</p>
+      </details>
+      <details>
+        <summary>Posso patrocinar o Caipyra?</summary>
+        <p>Sim! Em breve publicaremos o prospecto de patrocínio. <a href="#contato">Fale conosco</a>.</p>
+      </details>
+    </section>
+
+    <section id="contato" class="anchor">
+      <h2><span class="hl">Contato</span></h2>
+      <div class="card">
+        <p>Dúvidas gerais, mídia e patrocínio: <a href="mailto:contato@caipyra.org">contato@caipyra.org</a></p>
+      </div>
+    </section>
+  </main>
+
+  <section id="patrocinio" class="anchor">
+    <h2><span class="hl">Patrocínio</span></h2>
+    <div class="card">
+      <p>Quer apoiar o Caipyra 2026? Empresas e organizações são bem‑vindas! Nosso prospecto explica cotas, benefícios e visibilidade.</p>
+      <p>
+        <a class="btn" id="link-patrocinio" href="https://sponsor.example.com/caipyra-2026" target="_blank" rel="noopener">Plano de patrocínio <span aria-hidden>↗</span></a>
+        <span class="badge">Link temporário</span>
+      </p>
+      <p class="tiny">Envie um link direto para esta seção: <code>#patrocinio</code> (ex.: <code>https://seu-dominio/caipyra2026#patrocinio</code>).</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>Feito com <span aria-label="amor" title="amor">❤</span> pela comunidade Python.</div>
+    <div class="tiny">© 2026 Caipyra — Este site usa paleta Vinho (#963435) e Amarelo (#feca59).</div>
+  </footer>
+
+  <script>
+    // ===== Configurações simples =====
+    const TICKETS_URL = "https://tickets.example.com/caipyra-2026"; // TODO: substituir pela URL real da bilheteria
+    document.getElementById('cta-tickets').href = TICKETS_URL;
+    document.getElementById('link-ingressos').href = TICKETS_URL;
+
+    // Link de patrocínio (temporário e fácil de trocar)
+    const SPONSOR_URL = "https://sponsor.example.com/caipyra-2026"; // TODO: substituir pela URL real do prospecto
+    const $sponsor = document.getElementById('link-patrocinio');
+    if ($sponsor) $sponsor.href = SPONSOR_URL;
+
+    // Acesso direto a patrocínio via querystring (?patrocinio ou ?sponsor)
+    try {
+      const q = new URLSearchParams(location.search);
+      if (q.has('patrocinio') || q.has('sponsor')) {
+        const el = document.getElementById('patrocinio');
+        if (el) el.scrollIntoView({behavior:'smooth'});
+      }
+    } catch (e) {}
+
+    // Menu responsivo (mobile)
+    const navEl = document.querySelector('nav.nav');
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const menuLinks = document.getElementById('menu-links');
+    if (toggleBtn && navEl) {
+      toggleBtn.addEventListener('click', () => {
+        const isOpen = navEl.getAttribute('data-open') === 'true';
+        navEl.setAttribute('data-open', String(!isOpen));
+        toggleBtn.setAttribute('aria-expanded', String(!isOpen));
+      });
+      // Fechar ao clicar num link
+      if (menuLinks) menuLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        navEl.removeAttribute('data-open');
+        toggleBtn.setAttribute('aria-expanded','false');
+      }));
+      // Fechar com ESC
+      window.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape'){
+          navEl.removeAttribute('data-open');
+          toggleBtn.setAttribute('aria-expanded','false');
+        }
+      });
+    }
+
+    // ===== Contagem regressiva até 04/06/2026 09:00 (America/Sao_Paulo) =====
+    // Nota: o horário é aproximado e pode ser ajustado.
+    const target = new Date('2026-06-04T09:00:00-03:00');
+    const $d = document.getElementById('d');
+    const $h = document.getElementById('h');
+    const $m = document.getElementById('m');
+    const $s = document.getElementById('s');
+    const tick = () => {
+      const now = new Date();
+      let diff = Math.max(0, target - now);
+      const days = Math.floor(diff / (1000*60*60*24)); diff -= days*(1000*60*60*24);
+      const hours = Math.floor(diff / (1000*60*60)); diff -= hours*(1000*60*60);
+      const mins = Math.floor(diff / (1000*60)); diff -= mins*(1000*60);
+      const secs = Math.floor(diff / 1000);
+      $d.textContent = String(days);
+      $h.textContent = String(hours).padStart(2,'0');
+      $m.textContent = String(mins).padStart(2,'0');
+      $s.textContent = String(secs).padStart(2,'0');
+    };
+    tick(); setInterval(tick, 1000);
+  </script>
+
+  <!-- Dados estruturados para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Caipyra 2026",
+    "startDate": "2026-06-04T09:00:00-03:00",
+    "endDate": "2026-06-07T18:00:00-03:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "ICMC/USP",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Carlos",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      }
+    },
+    "image": [],
+    "description": "Encontro Python no interior — quatro dias de palestras, tutoriais e sprints.",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Comunidade Caipyra",
+      "url": "https://example.org/caipyra"
+    }
+  }
+  </script>
+</body>
+</html>
