@@ -48,7 +48,7 @@
     .actions{display:flex; gap:14px; flex-wrap:wrap}
     .badge{display:inline-block; border:1px dashed var(--fg); padding:6px 10px; border-radius: 999px; font-weight:700; letter-spacing:.3px}
 
-    main{max-width:var(--maxw); margin:0 auto; padding: 0 20px 64px}
+    main{max-width:var(--maxw); margin:0 auto; padding: 0 20px 12px}
     section{margin: 36px 0}
     h2{font-size: clamp(22px, 3.6vw, 34px); margin: 0 0 12px}
     p{margin:10px 0}
@@ -96,7 +96,9 @@
       .hero{ padding-top:48px }
     }
     /* alinhamento da seção Patrocínio */
-    #patrocinio{ max-width: var(--maxw); margin: 36px auto; padding: 0 20px }
+    #patrocinio{ max-width: var(--maxw); margin: 4px auto 24px; padding: 0 20px }
+    /* reduzir espaço entre a última seção do main e o próximo bloco */
+    main > section:last-of-type{ margin-bottom: 8px }
   </style>
 </head>
 <body>
@@ -120,14 +122,12 @@
   </header>
 
   <div class="hero" id="topo">
-    <p class="kicker">Encontro Python no interior</p>
     <h1><span class="hl">Caipyra</span> 2026</h1>
     <div class="meta">04 a 07 de junho de 2026 · ICMC/USP · São Carlos, SP</div>
-    <p class="lede">Quatro dias de palestras, tutoriais, sprints e muita paçoquinha. Junte-se à comunidade Python em São Carlos!</p>
+    <p class="lede">Quatro dias de palestras, tutoriais, sprints e muita paçoquinha. Junte-se ao grupy-sanca e à comunidade Python em São Carlos!</p>
     <div class="actions">
       <!-- Atualize a URL abaixo quando a bilheteria for publicada -->
-      <a class="btn" href="https://tickets.example.com/caipyra-2026" id="link-ingressos" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden>↗</span></a>
-      <span class="badge" id="ingressos">Link temporário</span>
+      <a class="btn" href="https://www.eventbrite.com.br/e/caipyra-2026-tickets-1886362142949" id="link-ingressos" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden>↗</span></a>
     </div>
     <div class="countdown" aria-live="polite" aria-label="Contagem regressiva para o evento">
       <div class="pill"><b id="d">–</b><span>dias</span></div>
@@ -215,24 +215,24 @@
     <div class="card">
       <p>Quer apoiar o Caipyra 2026? Empresas e organizações são bem‑vindas! Nosso prospecto explica cotas, benefícios e visibilidade.</p>
       <p>
-        <a class="btn" id="link-patrocinio" href="https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?usp=sharing" target="_blank" rel="noopener">Plano de patrocínio <span aria-hidden>↗</span></a>
+        <a class="btn" id="link-patrocinio" href="https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?pli=1&slide=id.p#slide=id.p" target="_blank" rel="noopener">Plano de patrocínio <span aria-hidden>↗</span></a>
       </p>
     </div>
   </section>
 
   <footer class="footer">
-    <div>Feito com <span aria-label="amor" title="amor">❤</span> pelo grupy-sanca e comunidade de São Carlos - SP.</div>
+    <div>Feito com <span aria-label="amor" title="amor">❤</span> pelo grupy-sanca e comunidade de São Carlos.</div>
     <div class="tiny">© 2026 Caipyra.</div>
   </footer>
 
   <script>
     // ===== Configurações simples =====
-    const TICKETS_URL = "https://tickets.example.com/caipyra-2026"; // TODO: substituir pela URL real da bilheteria
+    const TICKETS_URL = "https://www.eventbrite.com.br/e/caipyra-2026-tickets-1886362142949"; // TODO: substituir pela URL real da bilheteria
     document.getElementById('cta-tickets').href = TICKETS_URL;
     document.getElementById('link-ingressos').href = TICKETS_URL;
 
     // Link de patrocínio (temporário e fácil de trocar)
-    const SPONSOR_URL = "https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?usp=sharing"; // TODO: substituir pela URL real do prospecto
+    const SPONSOR_URL = "https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?pli=1&slide=id.p#slide=id.p"; // TODO: substituir pela URL real do prospecto
     const $sponsor = document.getElementById('link-patrocinio');
     if ($sponsor) $sponsor.href = SPONSOR_URL;
 
