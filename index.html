@@ -89,12 +89,14 @@
     @media (max-width: 840px){
       .menu-toggle{ display:inline-flex }
       .nav{ position:relative }
-      .nav .links{ position:absolute; right:12px; top:56px; background:rgba(0,0,0,.18); border:1px solid var(--ring); border-radius:14px; padding:10px; display:none; flex-direction:column; min-width: 220px; box-shadow:0 10px 30px var(--ring) }
+      .nav .links{ position:absolute; right:12px; top:56px; background:var(--bg); border:1px solid var(--ring); border-radius:14px; padding:10px; display:none; flex-direction:column; min-width: 220px; box-shadow:0 10px 30px var(--ring) }
       .nav[data-open="true"] .links{ display:flex }
       .nav .links .btn{ width:100%; justify-content:space-between; padding:12px 14px }
       .btn{ padding:12px 16px }
       .hero{ padding-top:48px }
     }
+    /* alinhamento da seção Patrocínio */
+    #patrocinio{ max-width: var(--maxw); margin: 36px auto; padding: 0 20px }
   </style>
 </head>
 <body>
@@ -121,7 +123,7 @@
     <p class="kicker">Encontro Python no interior</p>
     <h1><span class="hl">Caipyra</span> 2026</h1>
     <div class="meta">04 a 07 de junho de 2026 · ICMC/USP · São Carlos, SP</div>
-    <p class="lede">Quatro dias de palestras, tutoriais, sprints e muito café coado. Junte-se à comunidade Python em São Carlos!</p>
+    <p class="lede">Quatro dias de palestras, tutoriais, sprints e muita paçoquinha. Junte-se à comunidade Python em São Carlos!</p>
     <div class="actions">
       <!-- Atualize a URL abaixo quando a bilheteria for publicada -->
       <a class="btn" href="https://tickets.example.com/caipyra-2026" id="link-ingressos" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden>↗</span></a>
@@ -139,8 +141,8 @@
     <section id="sobre" class="anchor">
       <h2>Sobre o <span class="hl">Caipyra</span></h2>
       <div class="card">
-        <p>O Caipyra é um evento comunitário, independente e acessível, que celebra o ecossistema Python com foco em integração entre pessoas, diversidade e troca prática de conhecimento.</p>
-        <p>Nesta edição de 2026, nos reunimos no <strong>ICMC/USP</strong> em São Carlos para <strong>quinta</strong> de sprints (projetos open source), <strong>sexta</strong> de tutoriais e <strong>sábado &amp; domingo</strong> de palestras e lightning talks.</p>
+        <p>O Caipyra é um evento comunitário, independente, itinerante e acessível, que celebra o ecossistema Python com foco em integração entre pessoas, diversidade e troca prática de conhecimento.</p>
+        <p>Nesta edição de 2026, nos reuniremos no <strong>ICMC/USP</strong> em São Carlos.</p>
       </div>
     </section>
 
@@ -203,7 +205,7 @@
     <section id="contato" class="anchor">
       <h2><span class="hl">Contato</span></h2>
       <div class="card">
-        <p>Dúvidas gerais, mídia e patrocínio: <a href="mailto:contato@caipyra.org">contato@caipyra.org</a></p>
+        <p>Dúvidas gerais, mídia e patrocínio: <a href="mailto:contato@grupysanca.com.br">contato@grupysanca.com.br</a></p>
       </div>
     </section>
   </main>
@@ -213,16 +215,14 @@
     <div class="card">
       <p>Quer apoiar o Caipyra 2026? Empresas e organizações são bem‑vindas! Nosso prospecto explica cotas, benefícios e visibilidade.</p>
       <p>
-        <a class="btn" id="link-patrocinio" href="https://sponsor.example.com/caipyra-2026" target="_blank" rel="noopener">Plano de patrocínio <span aria-hidden>↗</span></a>
-        <span class="badge">Link temporário</span>
+        <a class="btn" id="link-patrocinio" href="https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?usp=sharing" target="_blank" rel="noopener">Plano de patrocínio <span aria-hidden>↗</span></a>
       </p>
-      <p class="tiny">Envie um link direto para esta seção: <code>#patrocinio</code> (ex.: <code>https://seu-dominio/caipyra2026#patrocinio</code>).</p>
     </div>
   </section>
 
   <footer class="footer">
-    <div>Feito com <span aria-label="amor" title="amor">❤</span> pela comunidade Python.</div>
-    <div class="tiny">© 2026 Caipyra — Este site usa paleta Vinho (#963435) e Amarelo (#feca59).</div>
+    <div>Feito com <span aria-label="amor" title="amor">❤</span> pelo grupy-sanca e comunidade de São Carlos - SP.</div>
+    <div class="tiny">© 2026 Caipyra.</div>
   </footer>
 
   <script>
@@ -232,7 +232,7 @@
     document.getElementById('link-ingressos').href = TICKETS_URL;
 
     // Link de patrocínio (temporário e fácil de trocar)
-    const SPONSOR_URL = "https://sponsor.example.com/caipyra-2026"; // TODO: substituir pela URL real do prospecto
+    const SPONSOR_URL = "https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?usp=sharing"; // TODO: substituir pela URL real do prospecto
     const $sponsor = document.getElementById('link-patrocinio');
     if ($sponsor) $sponsor.href = SPONSOR_URL;
 
@@ -291,34 +291,5 @@
     tick(); setInterval(tick, 1000);
   </script>
 
-  <!-- Dados estruturados para SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Caipyra 2026",
-    "startDate": "2026-06-04T09:00:00-03:00",
-    "endDate": "2026-06-07T18:00:00-03:00",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "location": {
-      "@type": "Place",
-      "name": "ICMC/USP",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "São Carlos",
-        "addressRegion": "SP",
-        "addressCountry": "BR"
-      }
-    },
-    "image": [],
-    "description": "Encontro Python no interior — quatro dias de palestras, tutoriais e sprints.",
-    "organizer": {
-      "@type": "Organization",
-      "name": "Comunidade Caipyra",
-      "url": "https://example.org/caipyra"
-    }
-  }
-  </script>
 </body>
 </html>
