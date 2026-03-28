@@ -13,7 +13,7 @@
   
   <style>
     :root{
-      --bg:#963435;     /* vinho */
+      --bg:#d71b00ff;     /* vinho */
       --fg:#ffffff;     /* branco base para texto */
       --accent:#feca59; /* amarelo destaque */
       --ring: rgba(254,202,89,0.35);
@@ -41,7 +41,7 @@
     .btn{display:inline-flex; align-items:center; gap:10px; border:2px solid var(--fg); padding:10px 16px; border-radius: 999px; text-decoration:none; font-weight:700; letter-spacing:.2px; transition: transform .15s ease, box-shadow .15s ease}
     .btn:hover{ transform: translateY(-1px); box-shadow:0 6px 22px var(--ring)}
     .btn:active{ transform: translateY(0) scale(.98)}
-    .hero{max-width:var(--maxw); margin:0 auto; padding:64px 20px 28px}
+    .hero{max-width:var(--maxw); margin:0 auto; padding:64px 20px}
     .hero h1{font-size: clamp(32px, 5vw, 56px); line-height:1.05; margin: 10px 0 8px}
     .meta{font-size: clamp(16px, 2.2vw, 20px); opacity:.95}
     .lede{margin:22px 0 28px; font-size: clamp(18px, 2.4vw, 22px)}
@@ -98,6 +98,7 @@
     /* alinhamento da seção Patrocínio e codigo */
     #patrocinio{ max-width: var(--maxw); margin: 4px auto 24px; padding: 0 20px }
     #codigo{ max-width: var(--maxw); margin: 4px auto 24px; padding: 0 20px }
+    #div-topo{ background: #ff7d01ff }
     /* reduzir espaço entre a última seção do main e o próximo bloco */
     main > section:last-of-type{ margin-bottom: 8px }
   </style>
@@ -108,7 +109,7 @@
     <nav class="nav" aria-label="Principal">
       <a class="brand" href="#topo" aria-label="Caipyra 2026, início">
         <span class="mark" aria-hidden="true">🐍</span>
-        <span><span class="hl">Caipyra</span> 2026</span>
+        <span><span class="hl">Caipyra</span> 2026</span>
       </a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="menu-links" aria-label="Abrir menu">☰</button>
       <div class="links" id="menu-links">
@@ -123,6 +124,7 @@
     </nav>
   </header>
 
+  <div id="div-topo">
   <div class="hero" id="topo">
     <h1><span class="hl">Caipyra</span> 2026</h1>
     <div class="meta">04 a 07 de junho de 2026 · ICMC/USP · São Carlos, SP</div>
@@ -138,8 +140,17 @@
       <div class="pill"><b id="s">–</b><span>s</span></div>
     </div>
   </div>
+  </div>
 
   <main id="conteudo">
+    <section id="submissao-palestras" class="anchor">
+      <h2><span class="hl">Submeta sua atividade</span></h2>
+      <div style="padding: 30px 0px">
+        <a class="btn" href="https://talks.python.org.br/caipyra-2026/" id="link-submissao-palestras" target="_blank" rel="noopener">Enviar proposta de atividade<span aria-hidden>↗</span></a>
+        <a class="btn" href="https://talks.python.org.br/caipyra-2026/cfp" id="link-regras-submissao" target="_blank" rel="noopener">Ver regras<span aria-hidden>↗</span></a>
+      </div>
+    </section>
+
     <section id="sobre" class="anchor">
       <h2>Sobre o <span class="hl">Caipyra</span></h2>
       <div class="card">
