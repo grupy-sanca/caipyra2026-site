@@ -11,97 +11,12 @@
   <meta property="og:locale" content="pt_BR" />
   <meta name="theme-color" content="#963435" />
   
-  <style>
-    :root{
-      --bg:#d71b00ff;     /* vinho */
-      --fg:#ffffff;     /* branco base para texto */
-      --accent:#feca59; /* amarelo destaque */
-      --ring: rgba(254,202,89,0.35);
-      --radius: 16px;
-      --maxw: 1100px;
-    }
-    html,body{height:100%}
-    *{box-sizing:border-box}
-    body{
-      margin:0; background:var(--bg); color:var(--fg); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-      line-height:1.45; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-    }
-    a{color:var(--fg); text-decoration:underline; text-underline-offset: 3px}
-    .hl{ color: var(--accent); }
-    header{
-      position:sticky; top:0; backdrop-filter:saturate(1.1) blur(6px);
-      background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0));
-      border-bottom:1px solid var(--ring); z-index:50;
-    }
-    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px; max-width:var(--maxw); margin:0 auto; padding:14px 20px}
-    .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.3px}
-    .brand .mark{width:36px; height:36px; border:2px solid var(--fg); border-radius:50%; display:grid; place-items:center; font-weight:900}
-    .nav a{ text-decoration:none }
-    .nav .links{display:flex; gap:14px; flex-wrap:wrap}
-    .btn{display:inline-flex; align-items:center; gap:10px; border:2px solid var(--fg); padding:10px 16px; border-radius: 999px; text-decoration:none; font-weight:700; letter-spacing:.2px; transition: transform .15s ease, box-shadow .15s ease}
-    .btn:hover{ transform: translateY(-1px); box-shadow:0 6px 22px var(--ring)}
-    .btn:active{ transform: translateY(0) scale(.98)}
-    .hero{max-width:var(--maxw); margin:0 auto; padding:64px 20px}
-    .hero h1{font-size: clamp(32px, 5vw, 56px); line-height:1.05; margin: 10px 0 8px}
-    .meta{font-size: clamp(16px, 2.2vw, 20px); opacity:.95}
-    .lede{margin:22px 0 28px; font-size: clamp(18px, 2.4vw, 22px)}
-    .actions{display:flex; gap:14px; flex-wrap:wrap}
-    .badge{display:inline-block; border:1px dashed var(--fg); padding:6px 10px; border-radius: 999px; font-weight:700; letter-spacing:.3px}
+  <link rel="stylesheet" href="/styles/index.css">
 
-    main{max-width:var(--maxw); margin:0 auto; padding: 0 20px 12px}
-    section{margin: 36px 0}
-    h2{font-size: clamp(22px, 3.6vw, 34px); margin: 0 0 12px}
-    p{margin:10px 0}
+  <script src="/scripts/countdown.js" async></script>
+  <script src="/scripts/menu.js" async></script>
+  <script src="/scripts/url.js" async></script>
 
-    .card{border:1px solid var(--ring); border-radius: var(--radius); padding:18px 18px; backdrop-filter: saturate(1.05);
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));}
-
-    .grid{display:grid; gap:16px}
-    @media (min-width: 720px){ .grid.cols-3{ grid-template-columns: repeat(3,1fr)} }
-    @media (min-width: 720px){ .grid.cols-2{ grid-template-columns: repeat(2,1fr)} }
-
-    .day{border:1px solid rgba(255,255,255,.85); border-radius: var(--radius); padding:14px 16px}
-    .day h3{margin:4px 0 10px; font-size: 18px}
-    .day ul{list-style:none; padding:0; margin:0; display:grid; gap:8px}
-    .day li{padding:10px 12px; border:1px dashed var(--ring); border-radius:12px}
-
-    .kicker{font-size:12px; letter-spacing: .25em; text-transform:uppercase; opacity:.9}
-    .faq details{ border:1px solid var(--ring); border-radius:12px; padding: 12px 14px}
-    .faq summary{cursor:pointer; font-weight:700}
-    .faq details + details{margin-top:10px}
-
-    .footer{border-top:1px solid var(--ring); padding:22px 20px 64px; text-align:center; opacity:.9}
-    .tiny{font-size:12px; opacity:.85}
-
-    .countdown{display:flex; gap:10px; margin:14px 0 0}
-    .pill{border:1px solid var(--fg); border-radius:12px; padding:8px 10px; min-width:72px; text-align:center}
-    .pill b{display:block; font-size:22px}
-
-    /* Skip link */
-    .skip{ position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
-    .skip:focus{ left:8px; top:8px; width:auto; height:auto; background:transparent; border:2px dashed var(--fg); border-radius:8px; padding:6px 10px }
-
-    /* Anchors spacing for sticky header */
-    .anchor{ position: relative; scroll-margin-top: 72px }
-
-    /* ----- Mobile navigation ----- */
-    .menu-toggle{ display:none; align-items:center; justify-content:center; gap:8px; border:2px solid var(--fg); background:transparent; color:var(--fg); padding:8px 12px; border-radius:12px; font-weight:800 }
-    @media (max-width: 840px){
-      .menu-toggle{ display:inline-flex }
-      .nav{ position:relative }
-      .nav .links{ position:absolute; right:12px; top:56px; background:var(--bg); border:1px solid var(--ring); border-radius:14px; padding:10px; display:none; flex-direction:column; min-width: 220px; box-shadow:0 10px 30px var(--ring) }
-      .nav[data-open="true"] .links{ display:flex }
-      .nav .links .btn{ width:100%; justify-content:space-between; padding:12px 14px }
-      .btn{ padding:12px 16px }
-      .hero{ padding-top:48px }
-    }
-    /* alinhamento da seção Patrocínio e codigo */
-    #patrocinio{ max-width: var(--maxw); margin: 4px auto 24px; padding: 0 20px }
-    #codigo{ max-width: var(--maxw); margin: 4px auto 24px; padding: 0 20px }
-    #div-topo{ background: #ff7d01ff }
-    /* reduzir espaço entre a última seção do main e o próximo bloco */
-    main > section:last-of-type{ margin-bottom: 8px }
-  </style>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -261,72 +176,5 @@
     <div>Feito com <span aria-label="amor" title="amor">❤</span> pelo grupy-sanca e comunidade de São Carlos.</div>
     <div class="tiny">© 2026 Caipyra.</div>
   </footer>
-
-  <script>
-    // ===== Configurações simples =====
-    const TICKETS_URL = "https://ingressos.python.org.br/caipyra/2026/"; // TODO: substituir pela URL real da bilheteria
-    document.getElementById('cta-tickets').href = TICKETS_URL;
-    document.getElementById('link-ingressos').href = TICKETS_URL;
-
-    // Link de patrocínio (temporário e fácil de trocar)
-    const SPONSOR_URL = "https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?pli=1&slide=id.p#slide=id.p"; // TODO: substituir pela URL real do prospecto
-    const $sponsor = document.getElementById('link-patrocinio');
-    if ($sponsor) $sponsor.href = SPONSOR_URL;
-
-    // Acesso direto a patrocínio via querystring (?patrocinio ou ?sponsor)
-    try {
-      const q = new URLSearchParams(location.search);
-      if (q.has('patrocinio') || q.has('sponsor')) {
-        const el = document.getElementById('patrocinio');
-        if (el) el.scrollIntoView({behavior:'smooth'});
-      }
-    } catch (e) {}
-
-    // Menu responsivo (mobile)
-    const navEl = document.querySelector('nav.nav');
-    const toggleBtn = document.querySelector('.menu-toggle');
-    const menuLinks = document.getElementById('menu-links');
-    if (toggleBtn && navEl) {
-      toggleBtn.addEventListener('click', () => {
-        const isOpen = navEl.getAttribute('data-open') === 'true';
-        navEl.setAttribute('data-open', String(!isOpen));
-        toggleBtn.setAttribute('aria-expanded', String(!isOpen));
-      });
-      // Fechar ao clicar num link
-      if (menuLinks) menuLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-        navEl.removeAttribute('data-open');
-        toggleBtn.setAttribute('aria-expanded','false');
-      }));
-      // Fechar com ESC
-      window.addEventListener('keydown', (ev) => {
-        if (ev.key === 'Escape'){
-          navEl.removeAttribute('data-open');
-          toggleBtn.setAttribute('aria-expanded','false');
-        }
-      });
-    }
-
-    // ===== Contagem regressiva até 04/06/2026 09:00 (America/Sao_Paulo) =====
-    // Nota: o horário é aproximado e pode ser ajustado.
-    const target = new Date('2026-06-04T09:00:00-03:00');
-    const $d = document.getElementById('d');
-    const $h = document.getElementById('h');
-    const $m = document.getElementById('m');
-    const $s = document.getElementById('s');
-    const tick = () => {
-      const now = new Date();
-      let diff = Math.max(0, target - now);
-      const days = Math.floor(diff / (1000*60*60*24)); diff -= days*(1000*60*60*24);
-      const hours = Math.floor(diff / (1000*60*60)); diff -= hours*(1000*60*60);
-      const mins = Math.floor(diff / (1000*60)); diff -= mins*(1000*60);
-      const secs = Math.floor(diff / 1000);
-      $d.textContent = String(days);
-      $h.textContent = String(hours).padStart(2,'0');
-      $m.textContent = String(mins).padStart(2,'0');
-      $s.textContent = String(secs).padStart(2,'0');
-    };
-    tick(); setInterval(tick, 1000);
-  </script>
-
 </body>
 </html>
