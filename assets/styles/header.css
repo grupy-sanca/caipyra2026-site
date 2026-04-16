@@ -1,0 +1,205 @@
+/* 
+
+  Estilos do header
+
+*/
+
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 5px 5px 15px 5px rgba(34, 34, 34, 0.2);
+}
+
+.header__logo {
+  height: 60px;
+}
+
+.logo-caipira {
+  width: auto;
+  height: 60px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__mobile-menu-button {
+  position: relative;
+  height: 30px;
+  width: 25px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+}
+
+.header__mobile-menu-button .line-1,
+.header__mobile-menu-button .line-2,
+.header__mobile-menu-button .line-3 {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: #000;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+  left: 0;
+}
+
+.header__mobile-menu-button .line-1 {
+  margin-top: -6px;
+}
+
+.header__mobile-menu-button .line-3 {
+  margin-top: 6px;
+}
+
+.header__mobile-menu-button.active .line-2 {
+  background: transparent;
+}
+
+.header__mobile-menu-button.active .line-1 {
+  margin-top: 0;
+  transform: rotate(45deg);
+}
+
+.header__mobile-menu-button.active .line-3 {
+  margin-top: 0;
+  transform: rotate(-45deg);
+}
+
+.header__navigation {
+  display: none;
+}
+
+.header__navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.header__navigation-list-item {
+  width: fit-content;
+}
+
+.header__navigation-list-item-link {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  color: #000;
+  font-weight: 500;
+}
+
+.header__navigation-list-item-link span::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fc7e00;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.header__navigation-list-item-link:hover,
+.header__navigation-list-item-link:focus {
+  color: #fc7e00;
+  font-weight: 500;
+}
+
+.header__navigation-list-item-link:hover span::after,
+.header__navigation-list-item-link:focus span::after {
+  transform: scaleX(1);
+}
+
+.header__navigation-list-item-link:focus {
+  outline: none;
+}
+
+.header__mobile-navigation {
+  visibility: hidden;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding-top 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+}
+
+.header__mobile-navigation.is-open {
+  visibility: visible;
+  max-height: 500px;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.header__mobile-navigation-list {
+  list-style: none;
+}
+
+.header__mobile-navigation-list-item:last-child {
+  border-bottom: none;
+}
+
+.header__mobile-navigation-list-item-link {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  padding: 1.25rem 0;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  color: #000;
+  font-weight: 500;
+}
+
+.header__mobile-navigation-list-item-link span {
+  display: inline-block;
+  width: fit-content;
+}
+
+.header__mobile-navigation-list-item-link span::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fc7e00;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.header__mobile-navigation-list-item-link:hover,
+.header__mobile-navigation-list-item-link:focus {
+  color: #fc7e00;
+  font-weight: 500;
+}
+
+.header__mobile-navigation-list-item-link:hover span::after,
+.header__mobile-navigation-list-item-link:focus span::after {
+  transform: scaleX(1);
+}
+
+.header__mobile-navigation-list-item-link:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__navigation {
+    display: block;
+    position: relative;
+    right: -50px;
+  }
+
+  .header__mobile-menu-button {
+    display: none;
+  }
+}
