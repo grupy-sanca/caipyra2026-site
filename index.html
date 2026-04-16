@@ -1,75 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Caipyra 2026 — 04 a 07 de junho — ICMC/USP, São Carlos</title>
-  <meta name="description" content="Caipyra 2026 — encontro Python no interior! 04 a 07 de junho de 2026 no ICMC/USP em São Carlos, SP." />
+  <meta name="description"
+    content="Caipyra 2026 — encontro Python no interior! 04 a 07 de junho de 2026 no ICMC/USP em São Carlos, SP." />
   <meta property="og:title" content="Caipyra 2026 — São Carlos, SP" />
   <meta property="og:description" content="04–07 de junho de 2026 no ICMC/USP. Participe!" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
   <meta name="theme-color" content="#963435" />
-  
-  <link rel="stylesheet" href="/styles/index.css">
 
-  <script src="/scripts/countdown.js" async></script>
-  <script src="/scripts/menu.js" async></script>
-  <script src="/scripts/url.js" async></script>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="assets/styles/index.css">
+  <link rel="stylesheet" href="assets/styles/header.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <script src="assets/scripts/countdown.js" async></script>
+  <script src="assets/scripts/menu.js" async></script>
+  <script src="assets/scripts/url.js" async></script>
 
 </head>
+
 <body>
-  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-  <header>
-    <nav class="nav" aria-label="Principal">
-      <a class="brand" href="#topo" aria-label="Caipyra 2026, início">
-        <span class="mark" aria-hidden="true">🐍</span>
-        <span><span class="hl">Caipyra</span> 2026</span>
-      </a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="menu-links" aria-label="Abrir menu">☰</button>
-      <div class="links" id="menu-links">
-        <a href="#sobre" class="btn">Sobre</a>
-        <a href="#programacao" class="btn">Programação</a>
-        <a href="#local" class="btn">Local</a>
-        <a href="#faq" class="btn">FAQ</a>
-        <a href="#patrocinio" class="btn">Patrocínio</a>
-        <a id="cta-tickets" href="#ingressos" class="btn" aria-label="Comprar ingressos">Ingressos</a>
-        <a href="#codigo" class="btn">Código de Conduta</a>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="#div-topo" class="header__link">
+          <img src="/assets/images/logo.svg" alt="Logo Caipyra 2026" class="logo-caipira">
+        </a>
+
+        <button class="header__mobile-menu-button" id="mobile-menu-toggle" aria-expanded="false"
+          aria-controls="nav-menu-mobile">
+          <span class="line-1"></span>
+          <span class="line-2"></span>
+          <span class="line-3"></span>
+        </button>
+
+        <nav class="header__navigation" id="nav-menu">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-list-item">
+              <a href="#sobre" class="header__navigation-list-item-link"><span>Sobre</span></a>
+            </li>
+            <li class="header__navigation-list-item">
+              <a href="#programacao" class="header__navigation-list-item-link"><span>Programação</span></a>
+            </li>
+            <li class="header__navigation-list-item">
+              <a href="#local" class="header__navigation-list-item-link"><span>Local</span></a>
+            </li>
+            <li class="header__navigation-list-item">
+              <a href="#faq" class="header__navigation-list-item-link"><span>FAQ</span></a>
+            </li>
+            <li class="header__navigation-list-item">
+              <a href="#patrocinio" class="header__navigation-list-item-link"><span>Patrocínio</span></a>
+            </li>
+            <li class="header__navigation-list-item">
+              <a href="#ingressos" class="header__navigation-list-item-link"><span>Ingressos</span></a>
+            </li>
+            <li class="header__navigation-list-item">
+              <a href="#codigo-conduta" class="header__navigation-list-item-link"><span>Código de Conduta</span></a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+
+      <nav class="header__mobile-navigation" id="nav-menu-mobile">
+        <ul class="header__mobile-navigation-list">
+          <li class="header__mobile-navigation-list-item">
+            <a href="#sobre" class="header__mobile-navigation-list-item-link"><span>Sobre</span></a>
+          </li>
+          <li class="header__mobile-navigation-list-item">
+            <a href="#programacao" class="header__mobile-navigation-list-item-link"><span>Programação</span></a>
+          </li>
+          <li class="header__mobile-navigation-list-item">
+            <a href="#local" class="header__mobile-navigation-list-item-link"><span>Local</span></a>
+          </li>
+          <li class="header__mobile-navigation-list-item">
+            <a href="#faq" class="header__mobile-navigation-list-item-link"><span>FAQ</span></a>
+          </li>
+          <li class="header__mobile-navigation-list-item">
+            <a href="#patrocinio" class="header__mobile-navigation-list-item-link"><span>Patrocínio</span></a>
+          </li>
+          <li class="header__mobile-navigation-list-item">
+            <a href="#ingressos" class="header__mobile-navigation-list-item-link"><span>Ingressos</span></a>
+          </li>
+          <li class="header__mobile-navigation-list-item">
+            <a href="#codigo-conduta" class="header__mobile-navigation-list-item-link"><span>Código de
+                Conduta</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div id="div-topo">
-  <div class="hero" id="topo">
-    <h1><span class="hl">Caipyra</span> 2026</h1>
-    <div class="meta">04 a 07 de junho de 2026 · ICMC/USP · São Carlos, SP</div>
-    <p class="lede">Quatro dias de palestras, tutoriais, sprints e muita paçoquinha. Junte-se ao grupy-sanca e à comunidade Python em São Carlos!</p>
-    <div class="actions">
-      <!-- Atualize a URL abaixo quando a bilheteria for publicada -->
-      <a class="btn" href="https://ingressos.python.org.br/caipyra/2026/" id="link-ingressos" target="_blank" rel="noopener">Comprar ingressos <span aria-hidden>↗</span></a>
-    </div>
-    <div class="countdown" aria-live="polite" aria-label="Contagem regressiva para o evento">
-      <div class="pill"><b id="d">–</b><span>dias</span></div>
-      <div class="pill"><b id="h">–</b><span>horas</span></div>
-      <div class="pill"><b id="m">–</b><span>min</span></div>
-      <div class="pill"><b id="s">–</b><span>s</span></div>
-    </div>
-  </div>
-  </div>
-
   <main id="conteudo">
+    <div id="div-topo">
+      <div class="hero" id="topo">
+        <h1><span class="hl">Caipyra</span> 2026</h1>
+        <div class="meta">04 a 07 de junho de 2026 · ICMC/USP · São Carlos, SP</div>
+        <p class="lede">Quatro dias de palestras, tutoriais, sprints e muita paçoquinha. Junte-se ao grupy-sanca e à
+          comunidade Python em São Carlos!</p>
+        <div class="actions">
+          <!-- Atualize a URL abaixo quando a bilheteria for publicada -->
+          <a class="btn" href="https://ingressos.python.org.br/caipyra/2026/" id="link-ingressos" target="_blank"
+            rel="noopener">Comprar ingressos <span aria-hidden>↗</span></a>
+        </div>
+        <div class="countdown" aria-live="polite" aria-label="Contagem regressiva para o evento">
+          <div class="pill"><b id="d">–</b><span>dias</span></div>
+          <div class="pill"><b id="h">–</b><span>horas</span></div>
+          <div class="pill"><b id="m">–</b><span>min</span></div>
+          <div class="pill"><b id="s">–</b><span>s</span></div>
+        </div>
+      </div>
+    </div>
+
     <section id="submissao-palestras" class="anchor">
       <h2><span class="hl">Submeta sua atividade</span></h2>
       <div style="padding: 30px 0px">
-        <a class="btn" href="https://talks.python.org.br/caipyra-2026/" id="link-submissao-palestras" target="_blank" rel="noopener">Enviar proposta de atividade<span aria-hidden>↗</span></a>
-        <a class="btn" href="https://talks.python.org.br/caipyra-2026/cfp" id="link-regras-submissao" target="_blank" rel="noopener">Ver regras<span aria-hidden>↗</span></a>
+        <a class="btn" href="https://talks.python.org.br/caipyra-2026/" id="link-submissao-palestras" target="_blank"
+          rel="noopener">Enviar proposta de atividade<span aria-hidden>↗</span></a>
+        <a class="btn" href="https://talks.python.org.br/caipyra-2026/cfp" id="link-regras-submissao" target="_blank"
+          rel="noopener">Ver regras<span aria-hidden>↗</span></a>
       </div>
     </section>
 
     <section id="sobre" class="anchor">
       <h2>Sobre o <span class="hl">Caipyra</span></h2>
       <div class="card">
-        <p>O Caipyra é um evento comunitário, independente, itinerante e acessível, que celebra o ecossistema Python com foco em integração entre pessoas, diversidade e troca prática de conhecimento.</p>
+        <p>O Caipyra é um evento comunitário, independente, itinerante e acessível, que celebra o ecossistema Python com
+          foco em integração entre pessoas, diversidade e troca prática de conhecimento.</p>
         <p>Nesta edição de 2026, nos reuniremos no <strong>ICMC/USP</strong> em São Carlos.</p>
       </div>
     </section>
@@ -109,7 +176,7 @@
       <h2><span class="hl">Local</span></h2>
       <div class="card">
         <p><strong>ICMC/USP — São Carlos, SP</strong><br />
-        Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo.</p>
+          Instituto de Ciências Matemáticas e de Computação da Universidade de São Paulo.</p>
         <p>Dicas de hospedagem e deslocamento serão publicadas aqui.</p>
       </div>
     </section>
@@ -126,14 +193,17 @@
       </details>
       <details>
         <summary>Posso patrocinar o Caipyra?</summary>
-        <p>Sim! Confira o <a href="https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?pli=1&slide=id.p#slide=id.p">nosso plano de patrocínio</a>.</p>
+        <p>Sim! Confira o <a
+            href="https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?pli=1&slide=id.p#slide=id.p">nosso
+            plano de patrocínio</a>.</p>
       </details>
     </section>
 
     <section id="contato" class="anchor">
       <h2><span class="hl">Contato</span></h2>
       <div class="card">
-        <p>Dúvidas gerais, mídia e patrocínio: <a href="mailto:contato@grupysanca.com.br">contato@grupysanca.com.br</a></p>
+        <p>Dúvidas gerais, mídia e patrocínio: <a href="mailto:contato@grupysanca.com.br">contato@grupysanca.com.br</a>
+        </p>
       </div>
     </section>
   </main>
@@ -141,35 +211,56 @@
   <section id="patrocinio" class="anchor">
     <h2><span class="hl">Patrocínio</span></h2>
     <div class="card">
-      <p>Quer apoiar o Caipyra 2026? Empresas e organizações são bem‑vindas! Nosso prospecto explica cotas, benefícios e visibilidade.</p>
+      <p>Quer apoiar o Caipyra 2026? Empresas e organizações são bem‑vindas! Nosso prospecto explica cotas, benefícios e
+        visibilidade.</p>
       <p>
-        <a class="btn" id="link-patrocinio" href="https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?pli=1&slide=id.p#slide=id.p" target="_blank" rel="noopener">Plano de patrocínio <span aria-hidden>↗</span></a>
+        <a class="btn" id="link-patrocinio"
+          href="https://docs.google.com/presentation/d/1o5Wyz15ahUSsMLPCiYwr000VS8-bYbVU9SY8XLNhkfs/edit?pli=1&slide=id.p#slide=id.p"
+          target="_blank" rel="noopener">Plano de patrocínio <span aria-hidden>↗</span></a>
       </p>
     </div>
   </section>
   <section id="codigo" class="anchor">
     <h2><span class="hl">Código de Conduta</span></h2>
-      <div class="card">
-        <p>O Caipyra é um evento que tem o propósito de oferecer uma vivência livre de assédio para todas as pessoas envolvidas, independente de identidade de gênero, sexo, orientação sexual, deficiência, aparência física, composição corporal, raça, classe social, religião e qualquer representação de diversidade.</p>
-        <h3>Portanto:</h3>
-          <ul>
-            <li>Não é tolerado nenhum tipo de assédio, discriminação inapropriada ou humilhação pública;</li>
-            <li>Não é tolerado o descumprimento das leis brasileiras;</li>
-            <li>Toda pessoa presente no evento, independentemente do seu papel, está sujeita a estas regras.</li>
-          </ul>
-            <h3>Desta forma, entendemos que:</h3>
-          <ul>
-            <li>Assédio é a ação de insistir, perseguir ou coagir outra pessoa a um comportamento involuntário.</li>
-            <li>Discriminação inapropriada é o ato de separar, injuriar ou humilhar alguém, promovendo sua exclusão por um atributo particular.</li>
-            <li>Humilhação pública é o ato de submeter, rebaixar, ridicularizar ou promover o vexame de alguém publicamente.</li>
-            <li>O público-alvo do evento também inclui crianças e adolescentes, por isso buscamos manter um ambiente apropriado para todas as faixas etárias. Sendo assim, linguagem e imagens sexualizadas não são adequadas para palestras e ações promocionais de patrocinadores.</li>
-            <li>Seja gentil com as outras pessoas. Não insulte ou desestimule outras pessoas. Não publique fotos de outras pessoas sem o consentimento delas. Lembre-se que piadas de assédio, identidade de gênero, sexismo, racismo e exclusão são proibidas no evento.</li>
-            <li>A equipe de resposta está bem informada em como lidar com incidentes e em como agir com as situações. As pessoas organizadoras da conferência terão o prazer de ajudar a entrar em contato com a segurança local ou ajudar a garantir o cumprimento da lei local, ou ajudar aquelas pessoas que vivenciaram o assédio a se sentirem seguras durante todo o evento. A gente se importa com você e não queremos que nada estrague a sua experiência no evento.</li>
-            <li>Havendo um relato de violação destes princípios, a Equipe de Resposta realizará a devida análise e, quando necessário, tomará as ações para impedir a reincidência. Estas ações podem, mas não se restringem nem implicam em ir desde uma conversa em busca da retratação até um convite para se retirar do evento por tempo indeterminado.</li>
-        </ul>
-        <h3>Como identificar a equipe de resposta:</h3>
-          <p>Durante o evento, a equipe de resposta estará disponível para ajudar a resolver qualquer situação relacionada ao não cumprimento do código de conduta. A equipe pode ser identificada através de camisas de diferentes cores com relação a organização e participantes. Essas camisas poderão ser identificadas no balcão de credenciamento do evento.</p>
-      </div>
+    <div class="card">
+      <p>O Caipyra é um evento que tem o propósito de oferecer uma vivência livre de assédio para todas as pessoas
+        envolvidas, independente de identidade de gênero, sexo, orientação sexual, deficiência, aparência física,
+        composição corporal, raça, classe social, religião e qualquer representação de diversidade.</p>
+      <h3>Portanto:</h3>
+      <ul>
+        <li>Não é tolerado nenhum tipo de assédio, discriminação inapropriada ou humilhação pública;</li>
+        <li>Não é tolerado o descumprimento das leis brasileiras;</li>
+        <li>Toda pessoa presente no evento, independentemente do seu papel, está sujeita a estas regras.</li>
+      </ul>
+      <h3>Desta forma, entendemos que:</h3>
+      <ul>
+        <li>Assédio é a ação de insistir, perseguir ou coagir outra pessoa a um comportamento involuntário.</li>
+        <li>Discriminação inapropriada é o ato de separar, injuriar ou humilhar alguém, promovendo sua exclusão por um
+          atributo particular.</li>
+        <li>Humilhação pública é o ato de submeter, rebaixar, ridicularizar ou promover o vexame de alguém publicamente.
+        </li>
+        <li>O público-alvo do evento também inclui crianças e adolescentes, por isso buscamos manter um ambiente
+          apropriado para todas as faixas etárias. Sendo assim, linguagem e imagens sexualizadas não são adequadas para
+          palestras e ações promocionais de patrocinadores.</li>
+        <li>Seja gentil com as outras pessoas. Não insulte ou desestimule outras pessoas. Não publique fotos de outras
+          pessoas sem o consentimento delas. Lembre-se que piadas de assédio, identidade de gênero, sexismo, racismo e
+          exclusão são proibidas no evento.</li>
+        <li>A equipe de resposta está bem informada em como lidar com incidentes e em como agir com as situações. As
+          pessoas organizadoras da conferência terão o prazer de ajudar a entrar em contato com a segurança local ou
+          ajudar a garantir o cumprimento da lei local, ou ajudar aquelas pessoas que vivenciaram o assédio a se
+          sentirem seguras durante todo o evento. A gente se importa com você e não queremos que nada estrague a sua
+          experiência no evento.</li>
+        <li>Havendo um relato de violação destes princípios, a Equipe de Resposta realizará a devida análise e, quando
+          necessário, tomará as ações para impedir a reincidência. Estas ações podem, mas não se restringem nem implicam
+          em ir desde uma conversa em busca da retratação até um convite para se retirar do evento por tempo
+          indeterminado.</li>
+      </ul>
+      <h3>Como identificar a equipe de resposta:</h3>
+      <p>Durante o evento, a equipe de resposta estará disponível para ajudar a resolver qualquer situação relacionada
+        ao não cumprimento do código de conduta. A equipe pode ser identificada através de camisas de diferentes cores
+        com relação a organização e participantes. Essas camisas poderão ser identificadas no balcão de credenciamento
+        do evento.</p>
+    </div>
   </section>
 
   <footer class="footer">
@@ -177,4 +268,5 @@
     <div class="tiny">© 2026 Caipyra.</div>
   </footer>
 </body>
+
 </html>
