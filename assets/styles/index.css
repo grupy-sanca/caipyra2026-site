@@ -4,18 +4,6 @@ Estilos gerais da página
 
 */
 
-:root {
-    --bg: #d71b00ff;
-    /* vinho */
-    --fg: #ffffff;
-    /* branco base para texto */
-    --accent: #feca59;
-    /* amarelo destaque */
-    --ring: rgba(254, 202, 89, 0.35);
-    --radius: 16px;
-    --maxw: 1100px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -25,25 +13,17 @@ body {
     height: 100%
 }
 
+/* TODO trocar isso de lugar  */
+body {
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-    line-height: 1.45;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-.hl {
-    color: var(--accent);
-}
 
 /* container pra encapsular os conteúdos das seções */
 .container {
@@ -75,7 +55,6 @@ body {
 }
 
 @media(min-width: 1280px) {
-
     /* fixa tamanho */
     .container {
         padding-right: 0;

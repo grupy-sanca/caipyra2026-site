@@ -1,19 +1,25 @@
+/* 
+
+  Estilos do header
+
+*/
+
 .header {
   position: fixed;
   z-index: 10;
   width: 100%;
   background-color: #ffffff;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
   box-shadow: 5px 5px 15px 5px rgba(34, 34, 34, 0.2);
 }
 
-.header__link {
-    height: fit-content;
+.header__logo {
+  height: 60px;
 }
 
 .logo-caipira {
-    width: auto;
-    height: 60px;
+  width: auto;
+  height: 60px;
 }
 
 .header__content {
@@ -67,22 +73,8 @@
   transform: rotate(-45deg);
 }
 
-@media screen and (min-width: 1024px) {
-  .header__mobile-menu-button {
-    display: none;
-  }
-}
-
 .header__navigation {
   display: none;
-}
-
-@media screen and (min-width: 1024px) {
-  .header__navigation {
-    display: block;
-    position: relative;
-    right: -50px;
-  }
 }
 
 .header__navigation-list {
@@ -118,12 +110,14 @@
   transition: transform 0.4s ease-in-out;
 }
 
-.header__navigation-list-item-link:hover, .header__navigation-list-item-link:focus {
+.header__navigation-list-item-link:hover,
+.header__navigation-list-item-link:focus {
   color: #fc7e00;
   font-weight: 500;
 }
 
-.header__navigation-list-item-link:hover span::after, .header__navigation-list-item-link:focus span::after {
+.header__navigation-list-item-link:hover span::after,
+.header__navigation-list-item-link:focus span::after {
   transform: scaleX(1);
 }
 
@@ -153,6 +147,7 @@
 .header__mobile-navigation-list-item:last-child {
   border-bottom: none;
 }
+
 .header__mobile-navigation-list-item-link {
   display: inline-block;
   font-family: "Inter", sans-serif;
@@ -168,6 +163,7 @@
   display: inline-block;
   width: fit-content;
 }
+
 .header__mobile-navigation-list-item-link span::after {
   content: "";
   position: absolute;
@@ -180,13 +176,30 @@
   transform-origin: bottom left;
   transition: transform 0.4s ease-in-out;
 }
-.header__mobile-navigation-list-item-link:hover, .header__mobile-navigation-list-item-link:focus {
+
+.header__mobile-navigation-list-item-link:hover,
+.header__mobile-navigation-list-item-link:focus {
   color: #fc7e00;
   font-weight: 500;
 }
-.header__mobile-navigation-list-item-link:hover span::after, .header__mobile-navigation-list-item-link:focus span::after {
+
+.header__mobile-navigation-list-item-link:hover span::after,
+.header__mobile-navigation-list-item-link:focus span::after {
   transform: scaleX(1);
 }
+
 .header__mobile-navigation-list-item-link:focus {
   outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__navigation {
+    display: block;
+    position: relative;
+    right: -50px;
+  }
+
+  .header__mobile-menu-button {
+    display: none;
+  }
 }
