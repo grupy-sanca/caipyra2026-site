@@ -176,18 +176,65 @@ h6 {
     background-color: color-mix(in oklab, #FFF 10%, transparent);
 }
 
-.card {
-    border: 1px solid var(--ring);
-    border-radius: var(--radius);
-    padding: 18px 18px;
-    backdrop-filter: saturate(1.05);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+.about {
+    background-color: #f9fafb;
+    padding: 4rem 0;
+    scroll-margin: 2rem 0 0;
 }
 
-.grid {
-    display: grid;
-    gap: 16px
+.about__title {
+    color: #d11e00;
+    font-size: 2.5rem;
+    margin: 0 0 2rem;
+    text-align: center;
 }
+
+.about__description {
+    font-family: "Inter", sans-serif;
+    padding: 0 0 2rem;
+}
+
+.about__description p {
+    margin: 0 0 1rem;
+    text-align: justify;
+}
+
+.submissions {
+    background-color: #fc7e00;
+    color: #FFF;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.submissions__title {
+    font-size: 2.5rem;
+    margin: 0 0 2rem;
+}
+
+.submissions__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submissions__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 0 0;
+}
+
+.submissions__actions > .cta.white {
+    color: #FC7E00;
+}
+
+.description {
+    font-family: "Inter", sans-serif;
+    padding: 0 0 1rem;
+    font-size: 1.125rem;
+}
+
+
 
 @media (min-width: 720px) {
     .grid.cols-3 {
@@ -301,10 +348,26 @@ h6 {
     .countdown__label {
         font-size: .75rem;
     }
+
+    .submissions__actions {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about__description {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .description {
+        max-width: 70%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
     .hero__content-title {
         font-size: 6rem;
     }
+
 }
