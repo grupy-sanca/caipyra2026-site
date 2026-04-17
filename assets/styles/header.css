@@ -9,7 +9,7 @@
   z-index: 10;
   width: 100%;
   background-color: #ffffff;
-  padding: 1rem 0;
+  padding: .625rem 0;
   box-shadow: 5px 5px 15px 5px rgba(34, 34, 34, 0.2);
 }
 
@@ -193,10 +193,13 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .header {
+    padding: 1rem 0;
+  }
+
   .header__navigation {
     display: block;
     position: relative;
-    right: -50px;
   }
 
   .header__mobile-menu-button {

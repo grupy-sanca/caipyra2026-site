@@ -50,12 +50,11 @@ body {
         padding-right: 40px;
         padding-left: 40px;
         max-width: 1280px;
-        /* 1200 sem o padding */
     }
 }
 
 @media(min-width: 1280px) {
-    /* fixa tamanho */
+
     .container {
         padding-right: 0;
         padding-left: 0;
@@ -65,83 +64,113 @@ body {
     }
 }
 
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    border: 2px solid var(--fg);
-    padding: 10px 16px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: .2px;
-    transition: transform .15s ease, box-shadow .15s ease
-}
-
-.btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 22px var(--ring)
-}
-
-.btn:active {
-    transform: translateY(0) scale(.98)
-}
-
 .hero {
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 64px 20px
+    background: #FC7E00;
+    background: linear-gradient(90deg, rgba(252, 126, 0, 1) 0%, rgba(209, 30, 0, 1) 100%);
+    padding: 5rem 0;
 }
 
-.hero h1 {
-    font-size: clamp(32px, 5vw, 56px);
-    line-height: 1.05;
-    margin: 10px 0 8px
-}
-
-.meta {
-    font-size: clamp(16px, 2.2vw, 20px);
-    opacity: .95
-}
-
-.lede {
-    margin: 22px 0 28px;
-    font-size: clamp(18px, 2.4vw, 22px)
-}
-
-.actions {
+.hero__content {
     display: flex;
-    gap: 14px;
-    flex-wrap: wrap
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 0;
 }
 
-.badge {
-    display: inline-block;
-    border: 1px dashed var(--fg);
-    padding: 6px 10px;
-    border-radius: 999px;
-    font-weight: 700;
-    letter-spacing: .3px
+.hero__content-title {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 3.25rem;
+    color: #FFFFFF;
 }
 
-main {
-    max-width: var(--maxw);
-    margin: 0 auto;
-    padding: 0 20px 12px
+.--highlight {
+    color: rgb(255, 253, 152);
 }
 
-section {
-    margin: 36px 0
+.hero__content-description {
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    text-align: center;
+    text-wrap: balance;
+
+    padding: 2rem 0;
+
 }
 
-h2 {
-    font-size: clamp(22px, 3.6vw, 34px);
-    margin: 0 0 12px
+.countdown__title {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 1.5rem;
+    color: #FFFFFF;
 }
 
-p {
-    margin: 10px 0
+.countdown {
+    display: flex;
+    gap: .5rem;
+    padding: 1.5rem 0 3rem;
+}
+
+.countdown__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+
+    width: 75px;
+}
+
+.countdown__numbers {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 2.125rem;
+    font-variant-numeric: tabular-nums;
+    color: #FFF;
+}
+
+.countdown__label {
+    font-family: "Inter", sans-serif;
+    font-size: .625rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.hero__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.cta {
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+
+    font-size: 1.125rem;
+}
+
+.cta.white {
+    background-color: #FFFFFF;
+    color: #d11e00;
+    transition: all .3s ease-in-out;
+}
+
+.cta.white:hover {
+    opacity: .8;
+}
+
+.cta.transparent {
+    color: white;
+    background: none;
+    transition: all .3s ease-in-out;
+}
+
+.cta.transparent:hover {
+    background-color: color-mix(in oklab, #FFF 10%, transparent);
 }
 
 .card {
@@ -228,46 +257,6 @@ p {
     opacity: .85
 }
 
-.countdown {
-    display: flex;
-    gap: 10px;
-    margin: 14px 0 0
-}
-
-.pill {
-    border: 1px solid var(--fg);
-    border-radius: 12px;
-    padding: 8px 10px;
-    min-width: 72px;
-    text-align: center
-}
-
-.pill b {
-    display: block;
-    font-size: 22px
-}
-
-/* Skip link */
-.skip {
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-.skip:focus {
-    left: 8px;
-    top: 8px;
-    width: auto;
-    height: auto;
-    background: transparent;
-    border: 2px dashed var(--fg);
-    border-radius: 8px;
-    padding: 6px 10px
-}
-
 /* Anchors spacing for sticky header */
 .anchor {
     position: relative;
@@ -287,11 +276,32 @@ p {
     padding: 0 20px
 }
 
-#div-topo {
-    background: #ff7d01ff
+
+@media screen and (min-width: 768px) {
+    .hero__content-title {
+        font-size: 4rem;
+    }
+
+    .hero__actions {
+        flex-direction: row;
+    }
+
+    .countdown__card {
+        width: 120px;
+        padding: 2rem 1rem;
+    }
+
+    .countdown__numbers {
+        font-size: 3rem;
+    }
+
+    .countdown__label {
+        font-size: .75rem;
+    }
 }
 
-/* reduzir espaço entre a última seção do main e o próximo bloco */
-main>section:last-of-type {
-    margin-bottom: 8px
+@media screen and (min-width: 1280px) {
+    .hero__content-title {
+        font-size: 6rem;
+    }
 }
