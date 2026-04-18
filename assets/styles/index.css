@@ -152,7 +152,7 @@ a {
 .about {
     background-color: #f9fafb;
     padding: 4rem 0;
-    scroll-margin: 2rem 0 0;
+    scroll-margin: 3rem 0 0;
 }
 
 .about__title {
@@ -178,6 +178,7 @@ a {
     color: #FFF;
     padding: 4rem 0;
     text-align: center;
+    scroll-margin: 3rem 0 0;
 }
 
 .submissions__title,
@@ -212,6 +213,7 @@ a {
 .schedule {
     background-color: #FFF;
     padding: 4rem 0;
+    scroll-margin: 3rem 0 0;
 }
 
 .schedule__title {
@@ -505,6 +507,7 @@ a {
 .cdc {
     background-color: #f9fafb;
     padding: 2rem 0 4rem;
+    scroll-margin: 4rem 0 0;
 }
 
 .cdc__title {
