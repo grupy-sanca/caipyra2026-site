@@ -187,6 +187,10 @@ a {
     margin: 0 0 2rem;
 }
 
+.current_sponsors {
+    padding: 4rem 0;
+}
+
 .submissions__content {
     display: flex;
     flex-direction: column;
@@ -445,6 +449,7 @@ a {
     padding: 0 0 2rem;
 }
 
+.current_sponsors__options,
 .accomodations__options {
     padding: 2rem 0 0;
 }
@@ -460,14 +465,16 @@ a {
     padding: 0 0 2rem;
 }
 
+.current_sponsors__list,
 .accomodations__list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem 0 0;
+    padding: 2rem 0;
 }
 
+.current_sponsors__card,
 .accomodations__card {
     display: flex;
     flex-direction: column;
@@ -476,6 +483,23 @@ a {
     border-radius: 10px;
     padding: 2rem;
     transition: transform .3s ease-in-out;
+    justify-content: center;
+}
+
+#sponsors_gold > .current_sponsors__card {
+    width: 400px;
+}
+
+#sponsors_silver > .current_sponsors__card {
+    width: 300px;
+    height: 200px;
+}
+
+
+#sponsors_support > .current_sponsors__card,
+#sponsors_org > .current_sponsors__card {
+    width: 250px;
+    height: 200px;
 }
 
 .accomodations__card:hover {
@@ -738,6 +762,7 @@ details[open] .content-wrapper {
         flex-direction: row;
     }
 
+    .current_sponsors__list,
     .accomodations__list {
         flex-direction: row;
         justify-content: center;
