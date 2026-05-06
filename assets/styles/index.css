@@ -336,7 +336,7 @@ a {
 }
 
 .keynotes__list {
-    display: flex;
+    display: block;
     justify-content: center;
     list-style-type: none;
 }
@@ -345,6 +345,8 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
 .keynotes__info {
