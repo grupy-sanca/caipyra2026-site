@@ -395,6 +395,7 @@ a {
 .keynotes__name {
     font-size: 2rem;
     color: #d11e00;
+    text-align: left;
 }
 
 .keynotes__summary {
