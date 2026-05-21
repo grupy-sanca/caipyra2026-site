@@ -1,0 +1,579 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<iCalendar xmlns:pentabarf='http://pentabarf.org' xmlns:xCal='urn:ietf:params:xml:ns:xcal'>
+    <vcalendar>
+        <version>2.0</version>
+        <prodid>-//Pentabarf//Schedule//EN</prodid>
+        <x-wr-caldesc></x-wr-caldesc>
+        <x-wr-calname></x-wr-calname>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>XCABN8@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-XCABN8</pentabarf:event-slug>
+            <pentabarf:title>Google Earth Engine &amp; Python</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260605T083000</dtstart>
+            <dtend>20260605T120000</dtend>
+            <duration>033000</duration>
+            <summary>Google Earth Engine &amp; Python</summary>
+            <description>O tutorial curto de Google Earth Engine &amp; Python apresenta o Google Earth Engine (GEE), uma plataforma de escala global para análises geoespaciais. O GEE possibilita análises e visualização de bases de dados geoespaciais, sendo uma poderosa ferramenta para as pessoas interessadas em estudos ambientais e geoprocessamento. A plataforma permite uso gratuito para uso não comercial e tem interface baseada em scripts em JavaScript ou Python. Neste tutorial, aprenderemos o básico sobre o GEE e como utilizar tanto em JavaScript quanto em Python. A prática do tutorial incluirá: definição da área de estudo, visualização de dados de sensor, filtragem dos dados de sensor, visualização de mapa dinâmico, cálculo de cor verdadeira e falsa cor, cálculo de índices espectrais e exportação de resultados.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Tutorial curto</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/XCABN8/</url>
+            <location>Tutoriais - sala 1</location>
+            
+            <attendee>Ádria Kanome Mori Soares</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>PGHKG7@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-PGHKG7</pentabarf:event-slug>
+            <pentabarf:title>Descubra emoções em textos com NLP, LLM’s e ML</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260605T140000</dtstart>
+            <dtend>20260605T173000</dtend>
+            <duration>033000</duration>
+            <summary>Descubra emoções em textos com NLP, LLM’s e ML</summary>
+            <description>Este tutorial foi feito para aqueles que estão buscando frequentemente a resposta de como as coisas funcionam e querem experimentar na prática. O objetivo principal é proporcionar uma experiência prática e profunda sobre emoções em textos, integrando técnicas clássicas de Processamento de Linguagem Natural (PLN), abordagens modernas baseadas em Modelos de Linguagem de Grande Escala (LLMs) e desenvolvimento de Machine Learning (ML). Durante a atividade, os participantes receberão orientação desde a contextualização do problema e fundamentos teóricos até a criação completa de uma pipeline funcional para análise de emoções em textos reais. Serão abordados conceitos fundamentais, como pré-processamento de texto, representação de texto e classificação, usando bibliotecas amplamente utilizadas no ecossistema Python. Também será abordada a utilização de modelos pré-treinados fundamentados em LLMs, analisando seus benefícios, restrições, custos e implicações práticas em comparação com os métodos convencionais. Além disso, também vai ser abordado as dificuldades e vantagens de se criar um aprendizado de máquina voltado para o reconhecimento de emoções.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Tutorial curto</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/PGHKG7/</url>
+            <location>Tutoriais - sala 1</location>
+            
+            <attendee>Bernardo De Castro</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>PGCXJN@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-PGCXJN</pentabarf:event-slug>
+            <pentabarf:title>Python para Cidadania: Dados da Câmara em ano eleitoral.</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260605T083000</dtstart>
+            <dtend>20260605T120000</dtend>
+            <duration>033000</duration>
+            <summary>Python para Cidadania: Dados da Câmara em ano eleitoral.</summary>
+            <description>Dados públicos são uma ferramenta poderosa para promover transparência, cidadania e análise crítica. No entanto, muitas vezes esses dados estão disponíveis apenas em formatos técnicos que dificultam sua utilização por cidadãos, jornalistas e educadores.
+
+Neste tutorial prático, os participantes aprenderão a acessar e analisar dados da API pública da Câmara dos Deputados utilizando Python em um ambiente simples e acessível: o Google Colab.
+
+A proposta é mostrar como transformar dados oficiais em informação compreensível por meio de análise exploratória e visualizações claras. Durante a atividade, os participantes irão coletar dados reais sobre deputados federais, explorar a estrutura da API, organizar os dados em tabelas e construir gráficos que ajudam a interpretar aspectos da atividade parlamentar.
+
+O foco do tutorial não é apenas técnico. Também discutiremos como formular boas perguntas antes de programar e como comunicar resultados de forma responsável e compreensível para o público.
+
+Ao final da atividade, os participantes terão construído um notebook completo contendo coleta de dados, tratamento básico e visualizações iniciais que podem servir como base para projetos de análise de dados públicos, jornalismo de dados ou aplicações cívicas.
+
+O tutorial é especialmente indicado para pessoas interessadas em análise de dados, transparência pública e uso de Python para resolver problemas do mundo real.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Tutorial curto</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/PGCXJN/</url>
+            <location>Tutoriais - sala 2</location>
+            
+            <attendee>Fernando Masanori Ashikaga</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>JF3K3F@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-JF3K3F</pentabarf:event-slug>
+            <pentabarf:title>Análise de Dados Geoespaciais</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260605T140000</dtstart>
+            <dtend>20260605T173000</dtend>
+            <duration>033000</duration>
+            <summary>Análise de Dados Geoespaciais</summary>
+            <description>A análise espacial, ou apenas análise geoespacial, é uma abordagem para aplicar a análise estatística e outras técnicas analíticas a dados que possuem um aspecto geográfico ou espacial. Essa análise normalmente é feita utilizando técnicas de renderização de mapas a partir do processamento de dados espaciais e a aplicação de métodos analíticos a conjuntos de dados terrestres ou geográficos. Neste tutorial, serão apresentados conceitos sobre como utilizar a linguagem de programação python para realizar a análise geoespacial de um conjunto de dados com informações geográficas, o que é essencial para obter uma boa compreensão acerca de dados georreferenciados, além de auxiliar na geração de hipóteses que podem ser extraídas a partir dessa análise.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Tutorial curto</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/JF3K3F/</url>
+            <location>Tutoriais - sala 2</location>
+            
+            <attendee>Gesiel Lopes</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>WKLA8H@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-WKLA8H</pentabarf:event-slug>
+            <pentabarf:title>Introdução à Arquitetura Orientada a Eventos com FastStream</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260605T140000</dtstart>
+            <dtend>20260605T173000</dtend>
+            <duration>033000</duration>
+            <summary>Introdução à Arquitetura Orientada a Eventos com FastStream</summary>
+            <description>A ideia é apresentar de forma simples e prática como funciona a arquitetura orientada a eventos e por que ela é tão usada em sistemas modernos. A gente vai usar FastStream junto com o RabbitMQ para mostrar como serviços conseguem se comunicar de forma assíncrona usando eventos.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Tutorial curto</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/WKLA8H/</url>
+            <location>Tutoriais - sala 3</location>
+            
+            <attendee>Antonio Cicero</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>XDGFQA@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-XDGFQA</pentabarf:event-slug>
+            <pentabarf:title>Do Texto ao Dado: O Uso de PLN no Contexto da Educação</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T093000</dtstart>
+            <dtend>20260606T101500</dtend>
+            <duration>004500</duration>
+            <summary>Do Texto ao Dado: O Uso de PLN no Contexto da Educação</summary>
+            <description></description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/XDGFQA/</url>
+            <location>Palestras - Auditório A</location>
+            
+            <attendee>Júlia Sousa</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>EDQKJX@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-EDQKJX</pentabarf:event-slug>
+            <pentabarf:title>Joins no Spark: Broadcast, Shuffle e Sort Merge</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T102000</dtstart>
+            <dtend>20260606T110500</dtend>
+            <duration>004500</duration>
+            <summary>Joins no Spark: Broadcast, Shuffle e Sort Merge</summary>
+            <description></description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/EDQKJX/</url>
+            <location>Palestras - Auditório A</location>
+            
+            <attendee>Dilenon</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>AFLKF8@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-AFLKF8</pentabarf:event-slug>
+            <pentabarf:title>Como criar e manter comunidades? Por uma pylady</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T140000</dtstart>
+            <dtend>20260606T144500</dtend>
+            <duration>004500</duration>
+            <summary>Como criar e manter comunidades? Por uma pylady</summary>
+            <description></description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/AFLKF8/</url>
+            <location>Palestras - Auditório A</location>
+            
+            <attendee>Ana Luiza Cesario</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>U3DP8D@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-U3DP8D</pentabarf:event-slug>
+            <pentabarf:title>Magias ao vivo: a arquitetura do Téo Me Why</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T154000</dtstart>
+            <dtend>20260606T162500</dtend>
+            <duration>004500</duration>
+            <summary>Magias ao vivo: a arquitetura do Téo Me Why</summary>
+            <description>Vamos conhecer o que está por trás das magias apresentadas ao vivo? Nossa plataforma conta com mais de 7.000 usuário aprendendo sobre Data Science e Tecnologia. Mas como fizemos isso acontecer e quais são as tecnologias envolvidas nesse processo? O quanto estamos expremendo o Streamlit e porque adotamos Go em alguns serviços? Como garantir que tudo pare de pé em um homelab? Tome a sua poção de mana e confira a nossa palestra.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/U3DP8D/</url>
+            <location>Palestras - Auditório A</location>
+            
+            <attendee>Teodoro Balbino Calvo</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>WJMGYZ@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-WJMGYZ</pentabarf:event-slug>
+            <pentabarf:title>Seu app precisa mesmo da Internet? Local-first c/ Reticulum</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T093000</dtstart>
+            <dtend>20260606T101500</dtend>
+            <duration>004500</duration>
+            <summary>Seu app precisa mesmo da Internet? Local-first c/ Reticulum</summary>
+            <description>Seu app precisa mesmo da internet? 
+Local-first na prática com Reticulum
+
+Cada vez mais assumimos que tudo precisa da internet para funcionar — até coisas que estão fisicamente próximas. Cardápios de restaurante, sistemas internos, até simples trocas de mensagem dentro da mesma rede local.
+Nesta palestra, partimos de exemplos reais do dia a dia para questionar essa dependência e explorar uma alternativa: comunicação local-first e infra-light.
+Usando Reticulum, veremos como dispositivos podem se comunicar diretamente, sem depender de servidores centrais, IPs fixos ou conectividade contínua com a internet.
+A apresentação inclui uma demonstração prática de comunicação funcionando sem internet, mostrando como essa abordagem pode ser usada para criar sistemas mais resilientes, privados e autônomos — capazes de operar mesmo em cenários com conectividade limitada, intermitente ou sob restrições.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/WJMGYZ/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Fabricio Campos Zuardi</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>UUAQDN@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-UUAQDN</pentabarf:event-slug>
+            <pentabarf:title>Como as humanas podem salvar os humanos do impacto da IA</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T102000</dtstart>
+            <dtend>20260606T110500</dtend>
+            <duration>004500</duration>
+            <summary>Como as humanas podem salvar os humanos do impacto da IA</summary>
+            <description>As incertezas da tecnologia passaram a dominar a ansiedade dos próprios devs. Ferramentas escrevem código, modelos geram respostas, e a promessa de automação parece avançar sobre aquilo que antes era considerado exclusivamente humano. Diante disso, surge uma pergunta inevitável: qual é, afinal, o papel do dev nesse novo cenário?
+
+Talvez a resposta para esse dilema não esteja na própria tecnologia. Talvez, esteja naquilo que sempre foi humano: entender, questionar e interpretar.
+
+Se máquinas estão cada vez melhores em produzir respostas, o diferencial humano pode estar justamente na capacidade de fazer as perguntas certas.
+
+Afinal, se os robôs já estão aqui… como os humanos salvarão os humanos dos robôs?</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/UUAQDN/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Andre Machado</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>TJXKDA@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-TJXKDA</pentabarf:event-slug>
+            <pentabarf:title>9 anos de ensino de Redes com Python</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T123000</dtstart>
+            <dtend>20260606T131500</dtend>
+            <duration>004500</duration>
+            <summary>9 anos de ensino de Redes com Python</summary>
+            <description>Desde 2018, leciono Redes de Computadores usando Python como linguagem principal nas atividades práticas. Nesta palestra, apresento as práticas que desenvolvi ao longo de 9 anos — um servidor IRC, uma implementação de TCP, encaminhamento IPv4 e enquadramento SLIP — culminando na integração de toda a pilha TCP/IP em hardware real (placas FPGA). Comento também práticas correlatas de Tecnologia de Comunicação (camada física), onde Python funciona bem para algumas atividades (simulação de antenas com OpenEMS, transceptor Wi-Fi 802.11a/g com NumPy/SciPy) mas foi insuficiente em outras: na prática de modem V.21, mesmo tendo conseguido desempenho de tempo real no gabarito em Python, nenhum grupo do período 2022/1 conseguiu, levando à migração para C++ e Rust. Discuto por que, apesar de alternativas como Numba, Cython ou HDLs baseadas em Python (MyHDL, Amaranth), preferi adotar linguagens com ecossistema mais limpo para esses casos.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/TJXKDA/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Paulo Matias</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>LSQREJ@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-LSQREJ</pentabarf:event-slug>
+            <pentabarf:title>Movendo Icebergs Para Um Floco de Neve</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T140000</dtstart>
+            <dtend>20260606T144500</dtend>
+            <duration>004500</duration>
+            <summary>Movendo Icebergs Para Um Floco de Neve</summary>
+            <description>Se você já trabalhou com pipelines de dados em produção, sabe que um projeto que &quot;funciona&quot; nem sempre é um projeto que escala. Nesta palestra, vou abrir o capô de uma arquitetura monolítica real — construída sobre Apache Iceberg para consolidação de dados — e mostrar como ela evoluiu para uma solução moderna no Snowflake.
+Vou conduzir você pela linha do tempo dessa migração: como era a arquitetura original, quais dores técnicas começaram a aparecer com o crescimento, por que o Snowflake surgiu como resposta e quais foram as decisões que moldaram o novo desenho. Mais do que um case de sucesso, esta é uma narrativa honesta — incluindo os momentos em que tivemos que repensar escolhas no meio do caminho.
+Se você está construindo ou mantendo plataformas de dados, vai sair daqui com referências concretas de arquitetura, critérios reais para avaliar migrações e, principalmente, com a clareza de que toda grande mudança começa com uma boa pergunta: &quot;será que o que temos hoje ainda é o suficiente para o amanhã?&quot;</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/LSQREJ/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Gabu Bellon</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>KT9YE3@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-KT9YE3</pentabarf:event-slug>
+            <pentabarf:title>Computação distribuída em Python com Dask</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260606T145000</dtstart>
+            <dtend>20260606T153500</dtend>
+            <duration>004500</duration>
+            <summary>Computação distribuída em Python com Dask</summary>
+            <description>O que acontece quando o tamanho do seu dataset é maior que a memória da maior máquina disponível?
+O que acontece quando o tempo de CPU necessário para uma atividade é estimado em vários meses, ou até anos?
+Nesses momentos convém distribuir a carga computacional entre várias máquinas e/ou vários processadores. Mas nem sempre essa é uma tarefa simples.
+Nesses momentos ter um framework pode facilitar bastante a vida das pessoas.
+Nesta palestra vamos apresentar o Dask, um framework para computação distribuída feito inteiramente em Python.
+E teremos código rodando ao vivo!</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/KT9YE3/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Edson Bomfim</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>GFFGWV@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-GFFGWV</pentabarf:event-slug>
+            <pentabarf:title>Como um sistema de recomendação decide o que você vê</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260607T093500</dtstart>
+            <dtend>20260607T102000</dtend>
+            <duration>004500</duration>
+            <summary>Como um sistema de recomendação decide o que você vê</summary>
+            <description>Sistemas de recomendação estão presentes na nossa vida o tempo todo: quando escolhemos um vídeo para assistir, um lanche para pedir, quando buscamos alguma coisa na internet. Mas afinal, como um sistema decide o que você quer ver? Esses sistemas podem ser construídos com diferentes abordagens, desde heurísticas simples até modelos de deep learning. Nesta palestra, vamos conhecer como diferentes sistemas de recomendação funcionam, e também veremos como comparar essas abordagens e avaliar sua qualidade, desde testes offline a experimentos online.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/GFFGWV/</url>
+            <location>Palestras - Auditório A</location>
+            
+            <attendee>João Hirasawa</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>NBVMNM@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-NBVMNM</pentabarf:event-slug>
+            <pentabarf:title>Pula a fogueira iaiá: Python no combate às queimadas no RJ</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260607T102500</dtstart>
+            <dtend>20260607T111000</dtend>
+            <duration>004500</duration>
+            <summary>Pula a fogueira iaiá: Python no combate às queimadas no RJ</summary>
+            <description>O INEA (Instituto Estadual do Ambiente) atua como a autoridade central de fiscalização ambiental no Rio de Janeiro. Nesta apresentação, exploraremos o De Olho no Verde - Queimadas, sistema focado no monitoramento e fiscalização de cicatrizes de fogo. Utilizando a detecção de focos de incêndio via o satélite FIRMS da NASA, a plataforma não apenas alerta Unidades de Conservação, como rastreia áreas degradadas e cria cicatrizes da área para a emissão de Laudos de Embargo Cautelar, contribuindo com os municípios na autuação dos responsáveis. Abordaremos o funcionamento dos alertas e a automatização dos relatórios, demonstrando como a otimização tecnológica tem sido um pilar estratégico no combate às queimadas e na proteção dos ecossistemas fluminenses.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/NBVMNM/</url>
+            <location>Palestras - Auditório A</location>
+            
+            <attendee>Bárbara Cardozo</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>YPYPCB@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-YPYPCB</pentabarf:event-slug>
+            <pentabarf:title>Revelando padrões em redes complexas com Python</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260607T140000</dtstart>
+            <dtend>20260607T144500</dtend>
+            <duration>004500</duration>
+            <summary>Revelando padrões em redes complexas com Python</summary>
+            <description>A análise de redes complexas, apresenta desafios que vão além das abordagens tradicionais baseadas em grafos. Estruturas de alta dimensão e padrões sutis muitas vezes não são capturados por métodos clássicos.
+
+Nesta palestra, apresento como a Análise Topológica de Dados (Topological Data Analysis - TDA) pode ser utilizada para identificar padrões estruturais em redes biológicas, com foco em mostrar como implementar essas ideias em Python.
+
+Serão explorados conceitos como construção de complexos simpliciais, cálculo de homologia persistente e interpretação de barcodes e diagramas de persistência.
+
+Além da base teórica intuitiva, a apresentação mostrará exemplos práticos com dados reais, incluindo etapas de modelagem, visualização e análise. 
+
+Ao final, espera-se que os participantes compreendam como aplicar TDA em Python para extrair e interpretar padrões em dados complexos, mesmo sem formação aprofundada em topologia.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/YPYPCB/</url>
+            <location>Palestras - Auditório A</location>
+            
+            <attendee>Edmara Viana</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>8ELYMS@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-8ELYMS</pentabarf:event-slug>
+            <pentabarf:title>Django aos 20: velho demais ou maduro o suficiente?</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260607T145000</dtstart>
+            <dtend>20260607T153500</dtend>
+            <duration>004500</duration>
+            <summary>Django aos 20: velho demais ou maduro o suficiente?</summary>
+            <description>Enquanto novos frameworks surgem prometendo revolucionar o desenvolvimento web, o Django segue firme há 20 anos resolvendo problemas reais em produção. Mas será que ele ainda faz sentido em 2026?  Nesta palestra, vamos além da comparação superficial com frameworks da moda e mostramos por que o Django continua sendo uma escolha poderosa para projetos web.
+
+Vamos explorar o que você ganha &quot;de graça&quot; ao escolher Django: um ORM maduro que abstrai a complexidade do banco de dados, sistema de migrações automáticas, autenticação e autorização prontas para uso, admin integrado, proteção contra vulnerabilidades comuns e um ecossistema de bibliotecas construído ao longo de duas décadas por uma comunidade ativa.
+
+Também vamos falar sobre como o Django está evoluindo. Com ferramentas como HTMX, é possível construir interfaces interativas e modernas sem a complexidade de um SPA em React ou Vue devolvendo o protagonismo ao servidor.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/8ELYMS/</url>
+            <location>Palestras - Auditório A</location>
+            
+            <attendee>Renne Rocha</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>JQMZ3M@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-JQMZ3M</pentabarf:event-slug>
+            <pentabarf:title>Como Python facilita a vida de um engenheiro geotécnico</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260607T093500</dtstart>
+            <dtend>20260607T102000</dtend>
+            <duration>004500</duration>
+            <summary>Como Python facilita a vida de um engenheiro geotécnico</summary>
+            <description>O Python é um kit de ferramentas computacional que pode ser aplicado à solução de variados problemas de engenharia. Sua sintaxe elegante e suas bibliotecas permitem desenvolver soluções com rapidez, o qual explica sua popularidade e seu amplo uso. Eu tive a oportunidade de aprendê-lo em 2020 e desde então continua sendo meu melhor companheiro de trabalho, estudos e pesquisa. Além dos benefícios concretos, o Python me ajudou a desenvolver a habilidade de conceitualizar e resolver problemas de forma lógica e algorítmica. O objetivo da minha palestra é mostrar a versatilidade do Python por meio de aplicações e projetos que desenvolvi utilizando suas bibliotecas NumPy, matplotlib e pandas; o framework Streamlit; e o notebook marimo. Assim mesmo, pretendo compartilhar meu workflow que inclui o emprego do terminal e do poderoso editor de texto Neovim. Finalmente, eu acredito que todo mundo pode aprender a programar no Python e espero que a palestra também sirva de inspiração, especialmente aos usuários mais novos ou de áreas não afins à computação.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/JQMZ3M/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Rhonner Politzer Ramírez Flores</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>ZWFPDR@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-ZWFPDR</pentabarf:event-slug>
+            <pentabarf:title>TDD na Prática: Uma demonstração com Django</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260607T102500</dtstart>
+            <dtend>20260607T111000</dtend>
+            <duration>004500</duration>
+            <summary>TDD na Prática: Uma demonstração com Django</summary>
+            <description>O desenvolvimento de software é uma atividade complexa. E há duas maneiras de minimizar esta complexidade: modelagem e testes. Nesta palestra, explicamos o que é Test Driven Development (TDD) e como esta abordagem auxilia no desenvolvimento sustentável do código. E durante a palestra realizamos uma demonstração com framework Django, em um projeto didático.</description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/ZWFPDR/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Orlando Saraiva Jr</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>TCUCQJ@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-TCUCQJ</pentabarf:event-slug>
+            <pentabarf:title>Construindo uma Cultura de Code Review</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260607T140000</dtstart>
+            <dtend>20260607T144500</dtend>
+            <duration>004500</duration>
+            <summary>Construindo uma Cultura de Code Review</summary>
+            <description></description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/TCUCQJ/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Renan de Assis</attendee>
+            
+        </vevent>
+        
+        <vevent>
+            <method>PUBLISH</method>
+            <uid>J8YJZU@@talks.python.org.br</uid>
+            <pentabarf:event-id></pentabarf:event-id>
+            <pentabarf:event-slug>-J8YJZU</pentabarf:event-slug>
+            <pentabarf:title>Testes Baseados em Propriedades</pentabarf:title>
+            <pentabarf:subtitle></pentabarf:subtitle>
+            <pentabarf:language>pt-br</pentabarf:language>
+            <pentabarf:language-code>pt-br</pentabarf:language-code>
+            <dtstart>20260607T145000</dtstart>
+            <dtend>20260607T153500</dtend>
+            <duration>004500</duration>
+            <summary>Testes Baseados em Propriedades</summary>
+            <description></description>
+            <class>PUBLIC</class>
+            <status>CONFIRMED</status>
+            <category>Talk</category>
+            <url>https://talks.python.org.br/caipyra-2026/talk/J8YJZU/</url>
+            <location>Palestras - Auditório B</location>
+            
+            <attendee>Pablo Henrique Aguilar</attendee>
+            
+        </vevent>
+        
+    </vcalendar>
+</iCalendar>
