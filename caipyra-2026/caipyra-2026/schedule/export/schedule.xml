@@ -1,0 +1,698 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- Made with love by pretalx v2026.1.2. -->
+<schedule>
+    <generator name="pretalx" version="2026.1.2" />
+    <version>0.1</version>
+    <conference>
+        <title>Caipyra 2026</title>
+        <acronym>caipyra-2026</acronym>
+        <start>2026-06-04</start>
+        <end>2026-06-07</end>
+        <days>4</days>
+        <timeslot_duration>00:05</timeslot_duration>
+        <base_url>https://talks.python.org.br</base_url>
+        <logo>https://talks.python.org.br/media/caipyra-2026/img/branco_NYcW0vb.png</logo>
+        <time_zone_name>America/Sao_Paulo</time_zone_name>
+        
+        
+        <track name="Não-técnica" slug="82-nao-tecnica"  color="#b022fc" />
+        
+        <track name="Iniciante" slug="83-iniciante"  color="#f228ad" />
+        
+        <track name="Intermediário" slug="84-intermediario"  color="#608cfc" />
+        
+        <track name="Avançado" slug="85-avancado"  color="#65ffac" />
+        
+        <track name="Keynote" slug="86-keynote"  color="#00ccff" />
+        
+    </conference>
+    <day index='1' date='2026-06-04' start='2026-06-04T04:00:00-03:00' end='2026-06-05T03:59:00-03:00'>
+        
+    </day>
+    <day index='2' date='2026-06-05' start='2026-06-05T04:00:00-03:00' end='2026-06-06T03:59:00-03:00'>
+        <room name='Tutoriais - sala 1' guid='d8e9e2bb-164c-5b2d-a022-87d47065d7c1'>
+            <event guid='dd2afdb3-a6e0-538d-a347-7bcb81111e4b' id='1249' code='XCABN8'>
+                <room>Tutoriais - sala 1</room>
+                <title>Google Earth Engine &amp; Python</title>
+                <subtitle></subtitle>
+                <type>Tutorial curto</type>
+                <date>2026-06-05T08:30:00-03:00</date>
+                <start>08:30</start>
+                <duration>03:30</duration>
+                <abstract>O tutorial curto de Google Earth Engine &amp; Python apresenta o Google Earth Engine (GEE), uma plataforma de escala global para an&#225;lises geoespaciais, acess&#237;vel em JavaScript e Python.</abstract>
+                <slug>caipyra-2026-1249-google-earth-engine-python</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1065'>&#193;dria Kanome Mori Soares</person>
+                </persons>
+                <language>pt-br</language>
+                <description>O tutorial curto de Google Earth Engine &amp; Python apresenta o Google Earth Engine (GEE), uma plataforma de escala global para an&#225;lises geoespaciais. O GEE possibilita an&#225;lises e visualiza&#231;&#227;o de bases de dados geoespaciais, sendo uma poderosa ferramenta para as pessoas interessadas em estudos ambientais e geoprocessamento. A plataforma permite uso gratuito para uso n&#227;o comercial e tem interface baseada em scripts em JavaScript ou Python. Neste tutorial, aprenderemos o b&#225;sico sobre o GEE e como utilizar tanto em JavaScript quanto em Python. A pr&#225;tica do tutorial incluir&#225;: defini&#231;&#227;o da &#225;rea de estudo, visualiza&#231;&#227;o de dados de sensor, filtragem dos dados de sensor, visualiza&#231;&#227;o de mapa din&#226;mico, c&#225;lculo de cor verdadeira e falsa cor, c&#225;lculo de &#237;ndices espectrais e exporta&#231;&#227;o de resultados.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/XCABN8/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='ff0e750f-8e2e-5575-a3a3-f8a97256b4e0' id='1208' code='PGHKG7'>
+                <room>Tutoriais - sala 1</room>
+                <title>Descubra emo&#231;&#245;es em textos com NLP, LLM&#8217;s e ML</title>
+                <subtitle></subtitle>
+                <type>Tutorial curto</type>
+                <date>2026-06-05T14:00:00-03:00</date>
+                <start>14:00</start>
+                <duration>03:30</duration>
+                <abstract>Descubra como funcionam as emo&#231;&#245;es em textos utilizando t&#233;cnicas de NLP, LLM&#8217;s e ML. Um tutorial 100% m&#227;o na massa, o objetivo &#233; apresentar desde os conceitos at&#233; a aplica&#231;&#227;o pr&#225;tica com um aprendizad</abstract>
+                <slug>caipyra-2026-1208-descubra-emocoes-em-textos-com-nlp-llm-s-e-ml</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1040'>Bernardo De Castro</person>
+                </persons>
+                <language>pt-br</language>
+                <description>Este tutorial foi feito para aqueles que est&#227;o buscando frequentemente a resposta de como as coisas funcionam e querem experimentar na pr&#225;tica. O objetivo principal &#233; proporcionar uma experi&#234;ncia pr&#225;tica e profunda sobre emo&#231;&#245;es em textos, integrando t&#233;cnicas cl&#225;ssicas de Processamento de Linguagem Natural (PLN), abordagens modernas baseadas em Modelos de Linguagem de Grande Escala (LLMs) e desenvolvimento de Machine Learning (ML). Durante a atividade, os participantes receber&#227;o orienta&#231;&#227;o desde a contextualiza&#231;&#227;o do problema e fundamentos te&#243;ricos at&#233; a cria&#231;&#227;o completa de uma pipeline funcional para an&#225;lise de emo&#231;&#245;es em textos reais. Ser&#227;o abordados conceitos fundamentais, como pr&#233;-processamento de texto, representa&#231;&#227;o de texto e classifica&#231;&#227;o, usando bibliotecas amplamente utilizadas no ecossistema Python. Tamb&#233;m ser&#225; abordada a utiliza&#231;&#227;o de modelos pr&#233;-treinados fundamentados em LLMs, analisando seus benef&#237;cios, restri&#231;&#245;es, custos e implica&#231;&#245;es pr&#225;ticas em compara&#231;&#227;o com os m&#233;todos convencionais. Al&#233;m disso, tamb&#233;m vai ser abordado as dificuldades e vantagens de se criar um aprendizado de m&#225;quina voltado para o reconhecimento de emo&#231;&#245;es.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/PGHKG7/</url>
+                <feedback_url></feedback_url>
+            </event>
+            
+        </room>
+        <room name='Tutoriais - sala 2' guid='33e1afc0-048d-56ec-98cc-502800f70caa'>
+            <event guid='660f46ab-4cce-530b-b46f-623c8fb66d15' id='1200' code='PGCXJN'>
+                <room>Tutoriais - sala 2</room>
+                <title>Python para Cidadania: Dados da C&#226;mara em ano eleitoral.</title>
+                <subtitle></subtitle>
+                <type>Tutorial curto</type>
+                <date>2026-06-05T08:30:00-03:00</date>
+                <start>08:30</start>
+                <duration>03:30</duration>
+                <abstract>Tutorial pr&#225;tico de an&#225;lise de dados p&#250;blicos com Python usando a API da C&#226;mara dos Deputados. Vamos coletar, analisar e visualizar dados legislativos em um notebook no Google Colab.</abstract>
+                <slug>caipyra-2026-1200-python-para-cidadania-dados-da-camara-em-ano-eleitoral</slug>
+                <track>Iniciante</track>
+                
+                <persons>
+                    <person id='1035'>Fernando Masanori Ashikaga</person>
+                </persons>
+                <language>pt-br</language>
+                <description>Dados p&#250;blicos s&#227;o uma ferramenta poderosa para promover transpar&#234;ncia, cidadania e an&#225;lise cr&#237;tica. No entanto, muitas vezes esses dados est&#227;o dispon&#237;veis apenas em formatos t&#233;cnicos que dificultam sua utiliza&#231;&#227;o por cidad&#227;os, jornalistas e educadores.
+
+Neste tutorial pr&#225;tico, os participantes aprender&#227;o a acessar e analisar dados da API p&#250;blica da C&#226;mara dos Deputados utilizando Python em um ambiente simples e acess&#237;vel: o Google Colab.
+
+A proposta &#233; mostrar como transformar dados oficiais em informa&#231;&#227;o compreens&#237;vel por meio de an&#225;lise explorat&#243;ria e visualiza&#231;&#245;es claras. Durante a atividade, os participantes ir&#227;o coletar dados reais sobre deputados federais, explorar a estrutura da API, organizar os dados em tabelas e construir gr&#225;ficos que ajudam a interpretar aspectos da atividade parlamentar.
+
+O foco do tutorial n&#227;o &#233; apenas t&#233;cnico. Tamb&#233;m discutiremos como formular boas perguntas antes de programar e como comunicar resultados de forma respons&#225;vel e compreens&#237;vel para o p&#250;blico.
+
+Ao final da atividade, os participantes ter&#227;o constru&#237;do um notebook completo contendo coleta de dados, tratamento b&#225;sico e visualiza&#231;&#245;es iniciais que podem servir como base para projetos de an&#225;lise de dados p&#250;blicos, jornalismo de dados ou aplica&#231;&#245;es c&#237;vicas.
+
+O tutorial &#233; especialmente indicado para pessoas interessadas em an&#225;lise de dados, transpar&#234;ncia p&#250;blica e uso de Python para resolver problemas do mundo real.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/PGCXJN/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='d1ee3fd7-13d4-5ab5-88ec-8bd18d4661b3' id='1245' code='JF3K3F'>
+                <room>Tutoriais - sala 2</room>
+                <title>An&#225;lise de Dados Geoespaciais</title>
+                <subtitle></subtitle>
+                <type>Tutorial curto</type>
+                <date>2026-06-05T14:00:00-03:00</date>
+                <start>14:00</start>
+                <duration>03:30</duration>
+                <abstract>Tutorial de an&#225;lise geoespacial com Python, abordando dados geogr&#225;ficos, mapas e m&#233;todos anal&#237;ticos para compreender dados georreferenciados e assim, gerar hip&#243;teses.</abstract>
+                <slug>caipyra-2026-1245-analise-de-dados-geoespaciais</slug>
+                <track>Iniciante</track>
+                
+                <persons>
+                    <person id='1064'>Gesiel Lopes</person>
+                </persons>
+                <language>pt-br</language>
+                <description>A an&#225;lise espacial, ou apenas an&#225;lise geoespacial, &#233; uma abordagem para aplicar a an&#225;lise estat&#237;stica e outras t&#233;cnicas anal&#237;ticas a dados que possuem um aspecto geogr&#225;fico ou espacial. Essa an&#225;lise normalmente &#233; feita utilizando t&#233;cnicas de renderiza&#231;&#227;o de mapas a partir do processamento de dados espaciais e a aplica&#231;&#227;o de m&#233;todos anal&#237;ticos a conjuntos de dados terrestres ou geogr&#225;ficos. Neste tutorial, ser&#227;o apresentados conceitos sobre como utilizar a linguagem de programa&#231;&#227;o python para realizar a an&#225;lise geoespacial de um conjunto de dados com informa&#231;&#245;es geogr&#225;ficas, o que &#233; essencial para obter uma boa compreens&#227;o acerca de dados georreferenciados, al&#233;m de auxiliar na gera&#231;&#227;o de hip&#243;teses que podem ser extra&#237;das a partir dessa an&#225;lise.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/JF3K3F/</url>
+                <feedback_url></feedback_url>
+            </event>
+            
+        </room>
+        <room name='Tutoriais - sala 3' guid='e644b21f-183f-5ed7-951c-5730fa479d49'>
+            <event guid='43792e8e-e6f6-5862-b1ec-07a2def3a0ee' id='1217' code='WKLA8H'>
+                <room>Tutoriais - sala 3</room>
+                <title>Introdu&#231;&#227;o &#224; Arquitetura Orientada a Eventos com FastStream</title>
+                <subtitle></subtitle>
+                <type>Tutorial curto</type>
+                <date>2026-06-05T14:00:00-03:00</date>
+                <start>14:00</start>
+                <duration>03:30</duration>
+                <abstract>Neste minicurso, faremos uma introdu&#231;&#227;o &#224; arquitetura orientada a eventos, utilizando a biblioteca FastStream em conjunto com o message broker RabbitMQ.</abstract>
+                <slug>caipyra-2026-1217-introducao-a-arquitetura-orientada-a-eventos-com-faststream</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1044'>Antonio Cicero</person>
+                </persons>
+                <language>pt-br</language>
+                <description>A ideia &#233; apresentar de forma simples e pr&#225;tica como funciona a arquitetura orientada a eventos e por que ela &#233; t&#227;o usada em sistemas modernos. A gente vai usar FastStream junto com o RabbitMQ para mostrar como servi&#231;os conseguem se comunicar de forma ass&#237;ncrona usando eventos.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/WKLA8H/</url>
+                <feedback_url></feedback_url>
+            </event>
+            
+        </room>
+        
+    </day>
+    <day index='3' date='2026-06-06' start='2026-06-06T04:00:00-03:00' end='2026-06-07T03:59:00-03:00'>
+        <room name='Palestras - Audit&#243;rio A' guid='314fba41-4ff4-5f33-a126-5dae8f737341'>
+            <event guid='5ab20066-fee6-59e9-b903-12b79c78fcfe' id='1289' code='XDGFQA'>
+                <room>Palestras - Audit&#243;rio A</room>
+                <title>Do Texto ao Dado: O Uso de PLN no Contexto da Educa&#231;&#227;o</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T09:30:00-03:00</date>
+                <start>09:30</start>
+                <duration>00:45</duration>
+                <abstract>Como a IA pode ir al&#233;m de uma simples nota e oferecer feedbacks que realmente ensinam? Vamos explorar os bastidores do desenvolvimento de aplica&#231;&#245;es de corre&#231;&#227;o de reda&#231;&#245;es do ENEM.</abstract>
+                <slug>caipyra-2026-1289-do-texto-ao-dado-o-uso-de-pln-no-contexto-da-educacao</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1093'>J&#250;lia Sousa</person>
+                </persons>
+                <language>pt-br</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/XDGFQA/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='7b7163f4-cb5e-5a0b-9d33-5021cfadaf65' id='1282' code='EDQKJX'>
+                <room>Palestras - Audit&#243;rio A</room>
+                <title>Joins no Spark: Broadcast, Shuffle e Sort Merge</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T10:20:00-03:00</date>
+                <start>10:20</start>
+                <duration>00:45</duration>
+                <abstract>Compare as estrat&#233;gias de JOIN no Pyspark e aprenda a escolher a ideal para cada situa&#231;&#227;o, otimizando performance e recursos</abstract>
+                <slug>caipyra-2026-1282-joins-no-spark-broadcast-shuffle-e-sort-merge</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1088'>Dilenon</person>
+                </persons>
+                <language>pt-br</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/EDQKJX/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='b101c5f4-f7db-5d65-a323-7d12c8ac07a3' id='1296' code='AFLKF8'>
+                <room>Palestras - Audit&#243;rio A</room>
+                <title>Como criar e manter comunidades? Por uma pylady</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T14:00:00-03:00</date>
+                <start>14:00</start>
+                <duration>00:45</duration>
+                <abstract>O que &#233; preciso para criar uma comunidade em tecnologia? O que &#233; essencial para manter uma comunidade ativa? Um papo sobre pessoas, cria&#231;&#227;o de amizades, conhecimento t&#233;cnico e networking.</abstract>
+                <slug>caipyra-2026-1296-como-criar-e-manter-comunidades-por-uma-pylady</slug>
+                <track>Não-técnica</track>
+                
+                <persons>
+                    <person id='1100'>Ana Luiza Cesario</person>
+                </persons>
+                <language>pt-br</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/AFLKF8/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='ab772969-776e-5786-972a-86bbd4aced43' id='1285' code='U3DP8D'>
+                <room>Palestras - Audit&#243;rio A</room>
+                <title>Magias ao vivo: a arquitetura do T&#233;o Me Why</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T15:40:00-03:00</date>
+                <start>15:40</start>
+                <duration>00:45</duration>
+                <abstract>Essa palestra tem como objetivo dar luz &#224; arquitura e decis&#245;es de tecnologia que tivemos ao construir o ecosistema do T&#233;o Me Why ao vivo, sempre com prioridade a entrega de valor para a comunidade.</abstract>
+                <slug>caipyra-2026-1285-magias-ao-vivo-a-arquitetura-do-teo-me-why</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1091'>Teodoro Balbino Calvo</person>
+                </persons>
+                <language>pt-br</language>
+                <description>Vamos conhecer o que est&#225; por tr&#225;s das magias apresentadas ao vivo? Nossa plataforma conta com mais de 7.000 usu&#225;rio aprendendo sobre Data Science e Tecnologia. Mas como fizemos isso acontecer e quais s&#227;o as tecnologias envolvidas nesse processo? O quanto estamos expremendo o Streamlit e porque adotamos Go em alguns servi&#231;os? Como garantir que tudo pare de p&#233; em um homelab? Tome a sua po&#231;&#227;o de mana e confira a nossa palestra.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/U3DP8D/</url>
+                <feedback_url></feedback_url>
+            </event>
+            
+        </room>
+        <room name='Palestras - Audit&#243;rio B' guid='fc5768d3-cef3-5eac-8d69-3536e9e22aee'>
+            <event guid='41664e8c-4de3-56e5-9f86-b091414336d3' id='1293' code='WJMGYZ'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>Seu app precisa mesmo da Internet? Local-first c/ Reticulum</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T09:30:00-03:00</date>
+                <start>09:30</start>
+                <duration>00:45</duration>
+                <abstract>Precisamos mesmo da internet para tudo? Uma provoca&#231;&#227;o pr&#225;tica com Reticulum mostrando comunica&#231;&#227;o local-first funcionando sem servidores, IP fixo ou conectividade cont&#237;nua.</abstract>
+                <slug>caipyra-2026-1293-seu-app-precisa-mesmo-da-internet-local-first-c-reticulum</slug>
+                <track>Iniciante</track>
+                
+                <persons>
+                    <person id='1096'>Fabricio Campos Zuardi</person>
+                </persons>
+                <language>pt-br</language>
+                <description>Seu app precisa mesmo da internet? 
+Local-first na pr&#225;tica com Reticulum
+
+Cada vez mais assumimos que tudo precisa da internet para funcionar &#8212; at&#233; coisas que est&#227;o fisicamente pr&#243;ximas. Card&#225;pios de restaurante, sistemas internos, at&#233; simples trocas de mensagem dentro da mesma rede local.
+Nesta palestra, partimos de exemplos reais do dia a dia para questionar essa depend&#234;ncia e explorar uma alternativa: comunica&#231;&#227;o local-first e infra-light.
+Usando Reticulum, veremos como dispositivos podem se comunicar diretamente, sem depender de servidores centrais, IPs fixos ou conectividade cont&#237;nua com a internet.
+A apresenta&#231;&#227;o inclui uma demonstra&#231;&#227;o pr&#225;tica de comunica&#231;&#227;o funcionando sem internet, mostrando como essa abordagem pode ser usada para criar sistemas mais resilientes, privados e aut&#244;nomos &#8212; capazes de operar mesmo em cen&#225;rios com conectividade limitada, intermitente ou sob restri&#231;&#245;es.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/WJMGYZ/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='0b60ca7f-7beb-5501-91c3-835551828907' id='1193' code='UUAQDN'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>Como as humanas podem salvar os humanos do impacto da IA</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T10:20:00-03:00</date>
+                <start>10:20</start>
+                <duration>00:45</duration>
+                <abstract>As incertezas da tecnologia passaram a dominar a ansiedade dos pr&#243;prios engenheiros. Talvez a resposta para esse dilema n&#227;o esteja na tecnologia. Como os humanos salvar&#227;o os humanos dos rob&#244;s?</abstract>
+                <slug>caipyra-2026-1193-como-as-humanas-podem-salvar-os-humanos-do-impacto-da-ia</slug>
+                <track>Não-técnica</track>
+                
+                <persons>
+                    <person id='1031'>Andre Machado</person>
+                </persons>
+                <language>pt-br</language>
+                <description>As incertezas da tecnologia passaram a dominar a ansiedade dos pr&#243;prios devs. Ferramentas escrevem c&#243;digo, modelos geram respostas, e a promessa de automa&#231;&#227;o parece avan&#231;ar sobre aquilo que antes era considerado exclusivamente humano. Diante disso, surge uma pergunta inevit&#225;vel: qual &#233;, afinal, o papel do dev nesse novo cen&#225;rio?
+
+Talvez a resposta para esse dilema n&#227;o esteja na pr&#243;pria tecnologia. Talvez, esteja naquilo que sempre foi humano: entender, questionar e interpretar.
+
+Se m&#225;quinas est&#227;o cada vez melhores em produzir respostas, o diferencial humano pode estar justamente na capacidade de fazer as perguntas certas.
+
+Afinal, se os rob&#244;s j&#225; est&#227;o aqui&#8230; como os humanos salvar&#227;o os humanos dos rob&#244;s?</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/UUAQDN/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='fce49164-3345-5d97-a328-c730cc0b497f' id='1196' code='TJXKDA'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>9 anos de ensino de Redes com Python</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T12:30:00-03:00</date>
+                <start>12:30</start>
+                <duration>00:45</duration>
+                <abstract>Relato de 9 anos usando Python como linguagem principal nas pr&#225;ticas de Redes de Computadores &#8212; onde d&#225; conta de tudo, e onde foi preciso buscar alternativas.</abstract>
+                <slug>caipyra-2026-1196-9-anos-de-ensino-de-redes-com-python</slug>
+                <track>Iniciante</track>
+                
+                <persons>
+                    <person id='1034'>Paulo Matias</person>
+                </persons>
+                <language>pt-br</language>
+                <description>Desde 2018, leciono Redes de Computadores usando Python como linguagem principal nas atividades pr&#225;ticas. Nesta palestra, apresento as pr&#225;ticas que desenvolvi ao longo de 9 anos &#8212; um servidor IRC, uma implementa&#231;&#227;o de TCP, encaminhamento IPv4 e enquadramento SLIP &#8212; culminando na integra&#231;&#227;o de toda a pilha TCP/IP em hardware real (placas FPGA). Comento tamb&#233;m pr&#225;ticas correlatas de Tecnologia de Comunica&#231;&#227;o (camada f&#237;sica), onde Python funciona bem para algumas atividades (simula&#231;&#227;o de antenas com OpenEMS, transceptor Wi-Fi 802.11a/g com NumPy/SciPy) mas foi insuficiente em outras: na pr&#225;tica de modem V.21, mesmo tendo conseguido desempenho de tempo real no gabarito em Python, nenhum grupo do per&#237;odo 2022/1 conseguiu, levando &#224; migra&#231;&#227;o para C++ e Rust. Discuto por que, apesar de alternativas como Numba, Cython ou HDLs baseadas em Python (MyHDL, Amaranth), preferi adotar linguagens com ecossistema mais limpo para esses casos.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/TJXKDA/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='3d472ac0-84f7-5e1e-bc4d-15a151c17cd6' id='1191' code='LSQREJ'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>Movendo Icebergs Para Um Floco de Neve</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T14:00:00-03:00</date>
+                <start>14:00</start>
+                <duration>00:45</duration>
+                <abstract>De monolito com Iceberg a Snowflake: a jornada real de uma migra&#231;&#227;o &#8212; arquitetura, decis&#245;es t&#233;cnicas, ganhos de desempenho e as li&#231;&#245;es que s&#243; a pr&#225;tica ensina.</abstract>
+                <slug>caipyra-2026-1191-movendo-icebergs-para-um-floco-de-neve</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1029'>Gabu Bellon</person>
+                </persons>
+                <language>pt-br</language>
+                <description>Se voc&#234; j&#225; trabalhou com pipelines de dados em produ&#231;&#227;o, sabe que um projeto que &quot;funciona&quot; nem sempre &#233; um projeto que escala. Nesta palestra, vou abrir o cap&#244; de uma arquitetura monol&#237;tica real &#8212; constru&#237;da sobre Apache Iceberg para consolida&#231;&#227;o de dados &#8212; e mostrar como ela evoluiu para uma solu&#231;&#227;o moderna no Snowflake.
+Vou conduzir voc&#234; pela linha do tempo dessa migra&#231;&#227;o: como era a arquitetura original, quais dores t&#233;cnicas come&#231;aram a aparecer com o crescimento, por que o Snowflake surgiu como resposta e quais foram as decis&#245;es que moldaram o novo desenho. Mais do que um case de sucesso, esta &#233; uma narrativa honesta &#8212; incluindo os momentos em que tivemos que repensar escolhas no meio do caminho.
+Se voc&#234; est&#225; construindo ou mantendo plataformas de dados, vai sair daqui com refer&#234;ncias concretas de arquitetura, crit&#233;rios reais para avaliar migra&#231;&#245;es e, principalmente, com a clareza de que toda grande mudan&#231;a come&#231;a com uma boa pergunta: &quot;ser&#225; que o que temos hoje ainda &#233; o suficiente para o amanh&#227;?&quot;</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/LSQREJ/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='bf38712f-b83e-5bd7-b206-7dc3c0baf682' id='1225' code='KT9YE3'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>Computa&#231;&#227;o distribu&#237;da em Python com Dask</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-06T14:50:00-03:00</date>
+                <start>14:50</start>
+                <duration>00:45</duration>
+                <abstract>Vamos conhecer Dask. O framework para computa&#231;&#227;o distribu&#237;da entre v&#225;rias m&#225;quinas escrito em Python.</abstract>
+                <slug>caipyra-2026-1225-computacao-distribuida-em-python-com-dask</slug>
+                <track>Avançado</track>
+                
+                <persons>
+                    <person id='1048'>Edson Bomfim</person>
+                </persons>
+                <language>pt-br</language>
+                <description>O que acontece quando o tamanho do seu dataset &#233; maior que a mem&#243;ria da maior m&#225;quina dispon&#237;vel?
+O que acontece quando o tempo de CPU necess&#225;rio para uma atividade &#233; estimado em v&#225;rios meses, ou at&#233; anos?
+Nesses momentos conv&#233;m distribuir a carga computacional entre v&#225;rias m&#225;quinas e/ou v&#225;rios processadores. Mas nem sempre essa &#233; uma tarefa simples.
+Nesses momentos ter um framework pode facilitar bastante a vida das pessoas.
+Nesta palestra vamos apresentar o Dask, um framework para computa&#231;&#227;o distribu&#237;da feito inteiramente em Python.
+E teremos c&#243;digo rodando ao vivo!</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/KT9YE3/</url>
+                <feedback_url></feedback_url>
+            </event>
+            
+        </room>
+        
+    </day>
+    <day index='4' date='2026-06-07' start='2026-06-07T04:00:00-03:00' end='2026-06-08T03:59:00-03:00'>
+        <room name='Palestras - Audit&#243;rio A' guid='314fba41-4ff4-5f33-a126-5dae8f737341'>
+            <event guid='80faefc5-7b6d-5ae1-8b89-ee60f1f87e31' id='1292' code='GFFGWV'>
+                <room>Palestras - Audit&#243;rio A</room>
+                <title>Como um sistema de recomenda&#231;&#227;o decide o que voc&#234; v&#234;</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-07T09:35:00-03:00</date>
+                <start>09:35</start>
+                <duration>00:45</duration>
+                <abstract>Sistemas de recomenda&#231;&#227;o podem ser constru&#237;dos com diversas abordagens, desde heur&#237;sticas simples at&#233; deep learning. Nesta palestra, vamos conhecer como diferentes modelos de recomenda&#231;&#227;o funcionam!</abstract>
+                <slug>caipyra-2026-1292-como-um-sistema-de-recomendacao-decide-o-que-voce-ve</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1095'>Jo&#227;o Hirasawa</person>
+                </persons>
+                <language>pt-br</language>
+                <description>Sistemas de recomenda&#231;&#227;o est&#227;o presentes na nossa vida o tempo todo: quando escolhemos um v&#237;deo para assistir, um lanche para pedir, quando buscamos alguma coisa na internet. Mas afinal, como um sistema decide o que voc&#234; quer ver? Esses sistemas podem ser constru&#237;dos com diferentes abordagens, desde heur&#237;sticas simples at&#233; modelos de deep learning. Nesta palestra, vamos conhecer como diferentes sistemas de recomenda&#231;&#227;o funcionam, e tamb&#233;m veremos como comparar essas abordagens e avaliar sua qualidade, desde testes offline a experimentos online.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/GFFGWV/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='6cfc28f8-b0fe-509c-85ea-5055391113de' id='1291' code='NBVMNM'>
+                <room>Palestras - Audit&#243;rio A</room>
+                <title>Pula a fogueira iai&#225;: Python no combate &#224;s queimadas no RJ</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-07T10:25:00-03:00</date>
+                <start>10:25</start>
+                <duration>00:45</duration>
+                <abstract>Como o uso do Python para a implementa&#231;&#227;o e automa&#231;&#227;o de um sistema de alertas de queimadas (De Olho no Verde - Queimadas) vem ajudando o Rio de Janeiro no combate &#224;s queimadas.</abstract>
+                <slug>caipyra-2026-1291-pula-a-fogueira-iaia-python-no-combate-as-queimadas-no-rj</slug>
+                <track>Iniciante</track>
+                
+                <persons>
+                    <person id='1097'>B&#225;rbara Cardozo</person>
+                </persons>
+                <language>pt-br</language>
+                <description>O INEA (Instituto Estadual do Ambiente) atua como a autoridade central de fiscaliza&#231;&#227;o ambiental no Rio de Janeiro. Nesta apresenta&#231;&#227;o, exploraremos o De Olho no Verde - Queimadas, sistema focado no monitoramento e fiscaliza&#231;&#227;o de cicatrizes de fogo. Utilizando a detec&#231;&#227;o de focos de inc&#234;ndio via o sat&#233;lite FIRMS da NASA, a plataforma n&#227;o apenas alerta Unidades de Conserva&#231;&#227;o, como rastreia &#225;reas degradadas e cria cicatrizes da &#225;rea para a emiss&#227;o de Laudos de Embargo Cautelar, contribuindo com os munic&#237;pios na autua&#231;&#227;o dos respons&#225;veis. Abordaremos o funcionamento dos alertas e a automatiza&#231;&#227;o dos relat&#243;rios, demonstrando como a otimiza&#231;&#227;o tecnol&#243;gica tem sido um pilar estrat&#233;gico no combate &#224;s queimadas e na prote&#231;&#227;o dos ecossistemas fluminenses.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/NBVMNM/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='e5d5254f-a161-5e2f-bb4c-5d718f8dfbda' id='1294' code='YPYPCB'>
+                <room>Palestras - Audit&#243;rio A</room>
+                <title>Revelando padr&#245;es em redes complexas com Python</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-07T14:00:00-03:00</date>
+                <start>14:00</start>
+                <duration>00:45</duration>
+                <abstract>Nesta palestra apresento como usar Python e An&#225;lise Topol&#243;gica de Dados para identificar padr&#245;es em redes complexas, explorando a extra&#231;&#227;o e interpreta&#231;&#227;o de estruturas topol&#243;gicas.</abstract>
+                <slug>caipyra-2026-1294-revelando-padroes-em-redes-complexas-com-python</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1098'>Edmara Viana</person>
+                </persons>
+                <language>pt-br</language>
+                <description>A an&#225;lise de redes complexas, apresenta desafios que v&#227;o al&#233;m das abordagens tradicionais baseadas em grafos. Estruturas de alta dimens&#227;o e padr&#245;es sutis muitas vezes n&#227;o s&#227;o capturados por m&#233;todos cl&#225;ssicos.
+
+Nesta palestra, apresento como a An&#225;lise Topol&#243;gica de Dados (Topological Data Analysis - TDA) pode ser utilizada para identificar padr&#245;es estruturais em redes biol&#243;gicas, com foco em mostrar como implementar essas ideias em Python.
+
+Ser&#227;o explorados conceitos como constru&#231;&#227;o de complexos simpliciais, c&#225;lculo de homologia persistente e interpreta&#231;&#227;o de barcodes e diagramas de persist&#234;ncia.
+
+Al&#233;m da base te&#243;rica intuitiva, a apresenta&#231;&#227;o mostrar&#225; exemplos pr&#225;ticos com dados reais, incluindo etapas de modelagem, visualiza&#231;&#227;o e an&#225;lise. 
+
+Ao final, espera-se que os participantes compreendam como aplicar TDA em Python para extrair e interpretar padr&#245;es em dados complexos, mesmo sem forma&#231;&#227;o aprofundada em topologia.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/YPYPCB/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='da85aac9-76ee-5231-8dbf-d2b8575188a0' id='1286' code='8ELYMS'>
+                <room>Palestras - Audit&#243;rio A</room>
+                <title>Django aos 20: velho demais ou maduro o suficiente?</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-07T14:50:00-03:00</date>
+                <start>14:50</start>
+                <duration>00:45</duration>
+                <abstract>Django tem 20 anos e zero hype mas continua entregando. ORM, auth, migrations, admin e um ecossistema imenso, tudo pronto.</abstract>
+                <slug>caipyra-2026-1286-django-aos-20-velho-demais-ou-maduro-o-suficiente</slug>
+                <track>Iniciante</track>
+                
+                <persons>
+                    <person id='1090'>Renne Rocha</person>
+                </persons>
+                <language>pt-br</language>
+                <description>Enquanto novos frameworks surgem prometendo revolucionar o desenvolvimento web, o Django segue firme h&#225; 20 anos resolvendo problemas reais em produ&#231;&#227;o. Mas ser&#225; que ele ainda faz sentido em 2026?  Nesta palestra, vamos al&#233;m da compara&#231;&#227;o superficial com frameworks da moda e mostramos por que o Django continua sendo uma escolha poderosa para projetos web.
+
+Vamos explorar o que voc&#234; ganha &quot;de gra&#231;a&quot; ao escolher Django: um ORM maduro que abstrai a complexidade do banco de dados, sistema de migra&#231;&#245;es autom&#225;ticas, autentica&#231;&#227;o e autoriza&#231;&#227;o prontas para uso, admin integrado, prote&#231;&#227;o contra vulnerabilidades comuns e um ecossistema de bibliotecas constru&#237;do ao longo de duas d&#233;cadas por uma comunidade ativa.
+
+Tamb&#233;m vamos falar sobre como o Django est&#225; evoluindo. Com ferramentas como HTMX, &#233; poss&#237;vel construir interfaces interativas e modernas sem a complexidade de um SPA em React ou Vue devolvendo o protagonismo ao servidor.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/8ELYMS/</url>
+                <feedback_url></feedback_url>
+            </event>
+            
+        </room>
+        <room name='Palestras - Audit&#243;rio B' guid='fc5768d3-cef3-5eac-8d69-3536e9e22aee'>
+            <event guid='de5a7a05-4ca7-5e5a-ab85-87172200d148' id='1218' code='JQMZ3M'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>Como Python facilita a vida de um engenheiro geot&#233;cnico</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-07T09:35:00-03:00</date>
+                <start>09:35</start>
+                <duration>00:45</duration>
+                <abstract>Essa atividade visa apresentar aplica&#231;&#245;es do Python na Engenharia Geot&#233;cnica nos &#226;mbitos do ensino-aprendizagem, da pesquisa e da ind&#250;stria; desde o ponto de vista de um pesquisador da EESC-USP.</abstract>
+                <slug>caipyra-2026-1218-como-python-facilita-a-vida-de-um-engenheiro-geotecnico</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1045'>Rhonner Politzer Ram&#237;rez Flores</person>
+                </persons>
+                <language>pt-br</language>
+                <description>O Python &#233; um kit de ferramentas computacional que pode ser aplicado &#224; solu&#231;&#227;o de variados problemas de engenharia. Sua sintaxe elegante e suas bibliotecas permitem desenvolver solu&#231;&#245;es com rapidez, o qual explica sua popularidade e seu amplo uso. Eu tive a oportunidade de aprend&#234;-lo em 2020 e desde ent&#227;o continua sendo meu melhor companheiro de trabalho, estudos e pesquisa. Al&#233;m dos benef&#237;cios concretos, o Python me ajudou a desenvolver a habilidade de conceitualizar e resolver problemas de forma l&#243;gica e algor&#237;tmica. O objetivo da minha palestra &#233; mostrar a versatilidade do Python por meio de aplica&#231;&#245;es e projetos que desenvolvi utilizando suas bibliotecas NumPy, matplotlib e pandas; o framework Streamlit; e o notebook marimo. Assim mesmo, pretendo compartilhar meu workflow que inclui o emprego do terminal e do poderoso editor de texto Neovim. Finalmente, eu acredito que todo mundo pode aprender a programar no Python e espero que a palestra tamb&#233;m sirva de inspira&#231;&#227;o, especialmente aos usu&#225;rios mais novos ou de &#225;reas n&#227;o afins &#224; computa&#231;&#227;o.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/JQMZ3M/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='aee05644-e99e-5d71-a158-3fe1048b49b9' id='1227' code='ZWFPDR'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>TDD na Pr&#225;tica: Uma demonstra&#231;&#227;o com Django</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-07T10:25:00-03:00</date>
+                <start>10:25</start>
+                <duration>00:45</duration>
+                <abstract>H&#225; duas maneiras de minimizar complexidade no desenvolvimento de software: modelagem e testes. Nesta palestra, explicamos o que &#233; Test Driven Development (TDD) e realizamos uma demonstra&#231;&#227;o com Django</abstract>
+                <slug>caipyra-2026-1227-tdd-na-pratica-uma-demonstracao-com-django</slug>
+                <track>Iniciante</track>
+                
+                <persons>
+                    <person id='1050'>Orlando Saraiva Jr</person>
+                </persons>
+                <language>pt-br</language>
+                <description>O desenvolvimento de software &#233; uma atividade complexa. E h&#225; duas maneiras de minimizar esta complexidade: modelagem e testes. Nesta palestra, explicamos o que &#233; Test Driven Development (TDD) e como esta abordagem auxilia no desenvolvimento sustent&#225;vel do c&#243;digo. E durante a palestra realizamos uma demonstra&#231;&#227;o com framework Django, em um projeto did&#225;tico.</description>
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/ZWFPDR/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='6ddc52da-a78c-513e-ba34-bc9deb525c97' id='1266' code='TCUCQJ'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>Construindo uma Cultura de Code Review</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-07T14:00:00-03:00</date>
+                <start>14:00</start>
+                <duration>00:45</duration>
+                <abstract>O que voc&#234; avalia na revis&#227;o de um c&#243;digo? Faz isso at&#233; nas suas pr&#243;prias PRs? Vou abordar a import&#226;ncia do code review para a colabora&#231;&#227;o e passagem de conhecimento com dicas para autores e revisores</abstract>
+                <slug>caipyra-2026-1266-construindo-uma-cultura-de-code-review</slug>
+                <track>Iniciante</track>
+                
+                <persons>
+                    <person id='1076'>Renan de Assis</person>
+                </persons>
+                <language>pt-br</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/TCUCQJ/</url>
+                <feedback_url></feedback_url>
+            </event>
+            <event guid='290ecf02-93d6-512b-bf43-2c9e51f5a43e' id='1210' code='J8YJZU'>
+                <room>Palestras - Audit&#243;rio B</room>
+                <title>Testes Baseados em Propriedades</title>
+                <subtitle></subtitle>
+                <type>Talk</type>
+                <date>2026-06-07T14:50:00-03:00</date>
+                <start>14:50</start>
+                <duration>00:45</duration>
+                <abstract>Essa palestra aborda um tipo de teste chamado de &quot;teste de propriedades&quot; que muda o jeito de escrevermos testes do nosso c&#243;digo, permitindo que n&#243;s testemos uma &#225;rea maior das poss&#237;veis entradas.</abstract>
+                <slug>caipyra-2026-1210-testes-baseados-em-propriedades</slug>
+                <track>Intermediário</track>
+                
+                <persons>
+                    <person id='1041'>Pablo Henrique Aguilar</person>
+                </persons>
+                <language>pt-br</language>
+                
+                <recording>
+                    <license></license>
+                    <optout>false</optout>
+                </recording>
+                <links></links>
+                <attachments></attachments>
+
+                <url>https://talks.python.org.br/caipyra-2026/talk/J8YJZU/</url>
+                <feedback_url></feedback_url>
+            </event>
+            
+        </room>
+        
+    </day>
+    
+</schedule>
