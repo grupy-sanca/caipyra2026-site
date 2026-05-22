@@ -266,6 +266,7 @@ a {
 
 .keynotes {
     padding: 2rem 0 4rem;
+    scroll-margin: 3rem 0 0;
 }
 
 .keynotes__title {
